@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
-import os
+import requests
+
+from io import BytesIO
 from datetime import datetime
 
 
@@ -17,16 +19,20 @@ st.set_page_config(
 
 
 # ============================================================
-# EXCEL CONFIGURATION
+# SHAREPOINT CONFIGURATION
 # ============================================================
 
-EXCEL_FILE ="https://infinitycr1.sharepoint.com/sites/MIS-InfinityCars/Benchmarking%20KPI%20Master.xlsx"
+SHAREPOINT_URL = (
+    "https://infinitycr1.sharepoint.com/"
+    "sites/MIS-InfinityCars/"
+    "Benchmarking%20KPI%20Master.xlsx"
+)
 
 SHEET_NAME = "Dash"
 
 
 # ============================================================
-# BRAND LOGOS
+# BMW / MINI LOGOS
 # ============================================================
 
 BMW_LOGO = (
@@ -41,7 +47,7 @@ MINI_LOGO = (
 
 
 # ============================================================
-# PREMIUM CSS
+# PREMIUM BMW / MINI UI
 # ============================================================
 
 st.markdown(
@@ -90,15 +96,8 @@ st.markdown(
 
 
     /* ========================================================
-       BRAND AREA
+       SIDEBAR TITLE
        ======================================================== */
-
-    .brand-container {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        padding: 5px 0 8px 0;
-    }
 
     .sidebar-title {
         font-size: 17px;
@@ -144,7 +143,7 @@ st.markdown(
 
 
     /* ========================================================
-       DATA STATUS
+       STATUS BOX
        ======================================================== */
 
     .status-box {
@@ -304,7 +303,7 @@ st.markdown(
 
 
     /* ========================================================
-       SECTION
+       SECTION CARD
        ======================================================== */
 
     .section-card {
@@ -408,14 +407,51 @@ st.markdown(
 
 
 # ============================================================
-# LOAD EXCEL DATA
+# LOAD DATA FROM SHAREPOINT
 # ============================================================
 
 @st.cache_data(ttl=300)
 def load_data():
 
+    response = requests.get(
+        SHAREPOINT_URL,
+        timeout=60,
+        allow_redirects=True
+    )
+
+    # --------------------------------------------------------
+    # CHECK HTTP STATUS
+    # --------------------------------------------------------
+
+    response.raise_for_status()
+
+    # --------------------------------------------------------
+    # CHECK THAT RESPONSE IS ACTUALLY EXCEL
+    # --------------------------------------------------------
+
+    content_type = response.headers.get(
+        "Content-Type",
+        ""
+    ).lower()
+
+    content = response.content
+
+    # Excel XLSX files start with ZIP signature PK
+    if not content.startswith(b"PK"):
+
+        raise ValueError(
+            "SharePoint did not return an Excel file. "
+            "It may have returned a Microsoft login page "
+            "instead. Please check that the SharePoint "
+            "file can be downloaded without an interactive login."
+        )
+
+    # --------------------------------------------------------
+    # READ EXCEL
+    # --------------------------------------------------------
+
     df = pd.read_excel(
-        EXCEL_FILE,
+        BytesIO(content),
         sheet_name=SHEET_NAME,
         engine="openpyxl"
     )
@@ -427,7 +463,7 @@ def load_data():
     df = df.dropna(how="all")
 
     # --------------------------------------------------------
-    # REMOVE ROWS CONTAINING ONLY BLANK VALUES
+    # REMOVE ROWS CONTAINING ONLY BLANK STRINGS
     # --------------------------------------------------------
 
     df = df[
@@ -449,6 +485,20 @@ def load_data():
     )
 
     # --------------------------------------------------------
+    # REMOVE COLUMNS WITH COMPLETELY EMPTY NAMES
+    # --------------------------------------------------------
+
+    df = df.loc[
+        :,
+        ~(
+            df.columns
+            .astype(str)
+            .str.strip()
+            .isin(["", "nan", "None"])
+        )
+    ]
+
+    # --------------------------------------------------------
     # RESET INDEX
     # --------------------------------------------------------
 
@@ -458,34 +508,43 @@ def load_data():
 
 
 # ============================================================
-# CHECK EXCEL FILE
-# ============================================================
-
-if not os.path.exists(EXCEL_FILE):
-
-    st.error("Excel file not found.")
-
-    st.code(EXCEL_FILE)
-
-    st.info(
-        "Please update the EXCEL_FILE variable "
-        "with the correct Excel path."
-    )
-
-    st.stop()
-
-
-# ============================================================
-# READ DATA
+# LOAD SHAREPOINT DATA
 # ============================================================
 
 try:
 
     df = load_data()
 
+    connection_status = True
+
+except requests.exceptions.HTTPError as e:
+
+    connection_status = False
+
+    st.error(
+        "Unable to access the SharePoint Excel file."
+    )
+
+    st.warning(
+        f"SharePoint returned HTTP error: {e}"
+    )
+
+    st.info(
+        "If the SharePoint file requires Microsoft login, "
+        "the direct-download method cannot authenticate "
+        "on Streamlit Cloud. In that case we can connect "
+        "SharePoint through Power Automate instead."
+    )
+
+    st.stop()
+
 except Exception as e:
 
-    st.error("Unable to read the Excel file.")
+    connection_status = False
+
+    st.error(
+        "Unable to load the SharePoint Excel file."
+    )
 
     st.exception(e)
 
@@ -499,7 +558,7 @@ except Exception as e:
 with st.sidebar:
 
     # --------------------------------------------------------
-    # BMW + MINI LOGOS
+    # LOGOS
     # --------------------------------------------------------
 
     logo_col1, logo_col2 = st.columns([1, 1.35])
@@ -524,7 +583,9 @@ with st.sidebar:
     # --------------------------------------------------------
 
     st.markdown(
-        '<div class="sidebar-title">BMW & MINI</div>',
+        '<div class="sidebar-title">'
+        'BMW & MINI'
+        '</div>',
         unsafe_allow_html=True
     )
 
@@ -543,18 +604,20 @@ with st.sidebar:
 
 
     # --------------------------------------------------------
-    # FILTERS
+    # FILTER TITLE
     # --------------------------------------------------------
 
     st.markdown(
-        '<div class="filter-label">Filters</div>',
+        '<div class="filter-label">'
+        'Filters'
+        '</div>',
         unsafe_allow_html=True
     )
 
 
-    # --------------------------------------------------------
+    # ========================================================
     # BUSINESS AREA FILTER
-    # --------------------------------------------------------
+    # ========================================================
 
     if "Business Area" in df.columns:
 
@@ -574,7 +637,8 @@ with st.sidebar:
         selected_business_area = st.multiselect(
             "Business Area",
             options=business_areas,
-            default=business_areas
+            default=business_areas,
+            key="business_area_filter"
         )
 
     else:
@@ -586,14 +650,20 @@ with st.sidebar:
         selected_business_area = []
 
 
-    # --------------------------------------------------------
+    # ========================================================
     # RESET FILTER
-    # --------------------------------------------------------
+    # ========================================================
 
     if st.button(
         "↻  Reset Filters",
         use_container_width=True
     ):
+
+        st.session_state.business_area_filter = (
+            business_areas
+            if "Business Area" in df.columns
+            else []
+        )
 
         st.rerun()
 
@@ -604,39 +674,43 @@ with st.sidebar:
     )
 
 
-    # --------------------------------------------------------
+    # ========================================================
     # DATA STATUS
-    # --------------------------------------------------------
+    # ========================================================
 
     st.markdown(
-        '<div class="filter-label">Data Status</div>',
+        '<div class="filter-label">'
+        'Data Status'
+        '</div>',
         unsafe_allow_html=True
     )
 
+
     st.markdown(
         """
- <div class="status-box">
+        <div class="status-box">
 
- <div>
- <span class="status-dot"></span>
- <span class="status-text">
-    Connected
- </span>
- </div>
+            <div>
+                <span class="status-dot"></span>
 
- <div class="status-subtext">
-    Dash sheet
- </div>
+                <span class="status-text">
+                    Connected
+                </span>
+            </div>
 
-</div>
+            <div class="status-subtext">
+                SharePoint / Dash
+            </div>
+
+        </div>
         """,
         unsafe_allow_html=True
     )
 
 
-    # --------------------------------------------------------
+    # ========================================================
     # LAST REFRESH
-    # --------------------------------------------------------
+    # ========================================================
 
     st.markdown(
         '<div class="filter-label" '
@@ -646,6 +720,7 @@ with st.sidebar:
         unsafe_allow_html=True
     )
 
+
     st.markdown(
         f"""
         <div style="
@@ -654,8 +729,10 @@ with st.sidebar:
             font-weight:600;
             margin-top:8px;
         ">
+
             ◷ &nbsp;
             {datetime.now().strftime("%d %b %Y %H:%M:%S")}
+
         </div>
 
         <div style="
@@ -663,29 +740,31 @@ with st.sidebar:
             font-size:10px;
             margin-top:5px;
         ">
-            Auto refresh every 5 min
+
+            Cache refresh every 5 minutes
+
         </div>
         """,
         unsafe_allow_html=True
     )
 
 
-    # --------------------------------------------------------
+    # ========================================================
     # SIDEBAR FOOTER
-    # --------------------------------------------------------
+    # ========================================================
 
     st.markdown(
         """
- <div class="sidebar-footer">
+        <div class="sidebar-footer">
 
- <strong>◆</strong>
-    &nbsp; Driving Performance.<br>
+            <strong>◆</strong>
+            &nbsp; Driving Performance.<br>
 
- <span style="padding-left:20px;">
-    Delivering Excellence.
- </span>
+            <span style="padding-left:20px;">
+                Delivering Excellence.
+            </span>
 
- </div>
+        </div>
         """,
         unsafe_allow_html=True
     )
@@ -715,7 +794,7 @@ if "Business Area" in filtered_df.columns:
 
 
 # ============================================================
-# RESET FILTERED DATAFRAME INDEX
+# RESET INDEX AFTER FILTER
 # ============================================================
 
 filtered_df = filtered_df.reset_index(drop=True)
@@ -735,41 +814,48 @@ else:
 
 
 # ============================================================
+# RESET DISPLAY INDEX
+# ============================================================
+
+display_df = display_df.reset_index(drop=True)
+
+
+# ============================================================
 # MAIN HEADER
 # ============================================================
 
 st.markdown(
     """
- <div class="page-header">
+    <div class="page-header">
 
- <div class="header-left">
+        <div class="header-left">
 
- <div class="page-title">
-    BMW & MINI Benchmark Dashboard
- </div>
+            <div class="page-title">
+                BMW & MINI Benchmark Dashboard
+            </div>
 
- <div class="page-subtitle">
-    Real-time insights. Smarter performance.
- </div>
+            <div class="page-subtitle">
+                Real-time insights. Smarter performance.
+            </div>
 
- </div>
+        </div>
 
- <div class="refresh-card">
+        <div class="refresh-card">
 
- <div class="refresh-label">
-    Last Refresh
- </div>
+            <div class="refresh-label">
+                Last Refresh
+            </div>
 
- <div class="refresh-value">
-    ◷ &nbsp;
+            <div class="refresh-value">
+                ◷ &nbsp;
     """
     + datetime.now().strftime("%d %b %Y %H:%M:%S")
     + """
- </div>
+            </div>
 
- </div>
+        </div>
 
- </div>
+    </div>
     """,
     unsafe_allow_html=True
 )
@@ -780,7 +866,7 @@ st.markdown(
 # ============================================================
 
 st.success(
-    f"Connected • Excel / {SHEET_NAME} sheet"
+    f"Connected • SharePoint / {SHEET_NAME} sheet"
 )
 
 
@@ -791,97 +877,113 @@ st.success(
 k1, k2, k3, k4 = st.columns(4)
 
 
+# ------------------------------------------------------------
+# KPI 1
+# ------------------------------------------------------------
+
 with k1:
 
     st.markdown(
         f"""
- <div class="kpi-card">
+        <div class="kpi-card">
 
- <div class="kpi-icon">
-    ▱
- </div>
+            <div class="kpi-icon">
+                ▱
+            </div>
 
- <div class="kpi-label">
-    Total Records
- </div>
+            <div class="kpi-label">
+                Total Records
+            </div>
 
- <div class="kpi-value">
-    {len(filtered_df):,}
- </div>
+            <div class="kpi-value">
+                {len(filtered_df):,}
+            </div>
 
-</div>
+        </div>
         """,
         unsafe_allow_html=True
     )
 
+
+# ------------------------------------------------------------
+# KPI 2
+# ------------------------------------------------------------
 
 with k2:
 
     st.markdown(
         f"""
- <div class="kpi-card">
+        <div class="kpi-card">
 
- <div class="kpi-icon">
-    ▦
- </div>
+            <div class="kpi-icon">
+                ▦
+            </div>
 
- <div class="kpi-label">
-    Display Columns
- </div>
+            <div class="kpi-label">
+                Display Columns
+            </div>
 
- <div class="kpi-value">
-    {len(display_df.columns):,}
- </div>
+            <div class="kpi-value">
+                {len(display_df.columns):,}
+            </div>
 
-</div>
+        </div>
         """,
         unsafe_allow_html=True
     )
 
+
+# ------------------------------------------------------------
+# KPI 3
+# ------------------------------------------------------------
 
 with k3:
 
     st.markdown(
         f"""
- <div class="kpi-card">
+        <div class="kpi-card">
 
- <div class="kpi-icon">
-    ◫
- </div>
+            <div class="kpi-icon">
+                ◫
+            </div>
 
- <div class="kpi-label">
-    Business Areas
- </div>
+            <div class="kpi-label">
+                Business Areas
+            </div>
 
- <div class="kpi-value">
-    {len(selected_business_area):,}
- </div>
+            <div class="kpi-value">
+                {len(selected_business_area):,}
+            </div>
 
- </div>
+        </div>
         """,
         unsafe_allow_html=True
     )
 
 
+# ------------------------------------------------------------
+# KPI 4
+# ------------------------------------------------------------
+
 with k4:
 
     st.markdown(
         f"""
- <div class="kpi-card">
+        <div class="kpi-card">
 
- <div class="kpi-icon">
-    ◷
- </div>
+            <div class="kpi-icon">
+                ◷
+            </div>
 
- <div class="kpi-label">
-    Records Displayed
- </div>
+            <div class="kpi-label">
+                Records Displayed
+            </div>
 
- <div class="kpi-value">
-    {len(display_df):,}
- </div>
+            <div class="kpi-value">
+                {len(display_df):,}
+            </div>
 
-</div>
+        </div>
         """,
         unsafe_allow_html=True
     )
@@ -896,19 +998,20 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+
 st.markdown(
     """
- <div class="section-card">
+    <div class="section-card">
 
- <div class="section-title">
-    ▦ &nbsp; DASH SHEET DATA
- </div>
+        <div class="section-title">
+            ▦ &nbsp; DASH SHEET DATA
+        </div>
 
- <div class="section-description">
-    Benchmark data based on the selected Business Area
- </div>
+        <div class="section-description">
+            Benchmark data based on the selected Business Area
+        </div>
 
-</div>
+    </div>
     """,
     unsafe_allow_html=True
 )
@@ -921,7 +1024,7 @@ st.markdown(
 if display_df.empty:
 
     st.warning(
-        "No data available to display."
+        "No data available for the selected Business Area."
     )
 
 else:
@@ -943,25 +1046,44 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+
 with st.expander("⌄   COLUMN INFORMATION"):
 
-    column_info = pd.DataFrame(
-        {
-            "Column Name": display_df.columns,
-            "Data Type": display_df.dtypes.astype(str).values,
-            "Non-Empty Values": display_df.notna().sum().values
-        }
-    )
+    if not display_df.empty:
 
-    st.dataframe(
-        column_info,
-        use_container_width=True,
-        hide_index=True
-    )
+        column_info = pd.DataFrame(
+            {
+                "Column Name": display_df.columns,
+                "Data Type": (
+                    display_df
+                    .dtypes
+                    .astype(str)
+                    .values
+                ),
+                "Non-Empty Values": (
+                    display_df
+                    .notna()
+                    .sum()
+                    .values
+                )
+            }
+        )
+
+        st.dataframe(
+            column_info,
+            use_container_width=True,
+            hide_index=True
+        )
+
+    else:
+
+        st.info(
+            "No columns available."
+        )
 
 
 # ============================================================
-# REFRESH
+# REFRESH SECTION
 # ============================================================
 
 st.markdown(
@@ -969,8 +1091,15 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-refresh_col1, refresh_col2 = st.columns([1, 5])
 
+refresh_col1, refresh_col2 = st.columns(
+    [1, 5]
+)
+
+
+# ------------------------------------------------------------
+# MANUAL REFRESH
+# ------------------------------------------------------------
 
 with refresh_col1:
 
@@ -984,6 +1113,10 @@ with refresh_col1:
         st.rerun()
 
 
+# ------------------------------------------------------------
+# REFRESH INFORMATION
+# ------------------------------------------------------------
+
 with refresh_col2:
 
     st.markdown(
@@ -993,8 +1126,11 @@ with refresh_col2:
             color:#7a8391;
             font-size:11px;
         ">
-            Data cache expires automatically every 5 minutes.
-            Use Refresh Data to load the latest Excel changes immediately.
+
+            Data is loaded directly from the SharePoint
+            Excel workbook. Cache expires automatically
+            every 5 minutes.
+
         </div>
         """,
         unsafe_allow_html=True
@@ -1007,17 +1143,17 @@ with refresh_col2:
 
 st.markdown(
     """
- <div class="luxury-footer">
+    <div class="luxury-footer">
 
- <span class="footer-brand">
-    BMW & MINI Benchmark Dashboard
- </span>
+        <span class="footer-brand">
+            BMW & MINI Benchmark Dashboard
+        </span>
 
-    &nbsp;&nbsp;•&nbsp;&nbsp;
+        &nbsp;&nbsp;•&nbsp;&nbsp;
 
-    Driving Performance. Delivering Excellence.
+        Driving Performance. Delivering Excellence.
 
- </div>
+    </div>
     """,
     unsafe_allow_html=True
 )
