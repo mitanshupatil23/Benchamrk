@@ -26,7 +26,7 @@ DATA_URL = (
     "main/benchmark_data.csv"
 )
 
-AUTO_REFRESH_SECONDS = 300
+AUTO_REFRESH_SECONDS = 10
 
 
 # ============================================================
