@@ -20,7 +20,7 @@ st.set_page_config(
 # EXCEL CONFIGURATION
 # ============================================================
 
-EXCEL_FILE = ""https://infinitycr1.sharepoint.com/sites/MIS-InfinityCars/Benchmarking%20KPI%20Master.xlsx""
+EXCEL_FILE = ""https://infinitycr1.sharepoint.com/sites/MIS-InfinityCars/Benchmarking%KPI%Master.xlsx""
 
 SHEET_NAME = "Dash"
 
