@@ -1,9 +1,7 @@
 import streamlit as st
 import pandas as pd
-import requests
-
-from io import BytesIO
 from datetime import datetime
+import time
 
 
 # ============================================================
@@ -11,7 +9,7 @@ from datetime import datetime
 # ============================================================
 
 st.set_page_config(
-    page_title="BMW & MINI | Benchmark Dashboard",
+    page_title="BMW | MINI Benchmark Dashboard",
     page_icon="◉",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -19,35 +17,20 @@ st.set_page_config(
 
 
 # ============================================================
-# SHAREPOINT CONFIGURATION
+# CONFIGURATION
 # ============================================================
 
-SHAREPOINT_URL = (
-    "https://infinitycr1.sharepoint.com/"
-    "sites/MIS-InfinityCars/"
-    "Benchmarking%20KPI%20Master.xlsx"
+DATA_URL = (
+    "https://raw.githubusercontent.com/"
+    "mitanshupatil23/Benchamrk/"
+    "main/benchmark_data.csv"
 )
 
-SHEET_NAME = "Dash"
+AUTO_REFRESH_SECONDS = 300
 
 
 # ============================================================
-# BMW / MINI LOGOS
-# ============================================================
-
-BMW_LOGO = (
-    "https://commons.wikimedia.org/wiki/"
-    "Special:Redirect/file/BMW_logo_(gray).svg"
-)
-
-MINI_LOGO = (
-    "https://commons.wikimedia.org/wiki/"
-    "Special:Redirect/file/Mini-logo.svg"
-)
-
-
-# ============================================================
-# PREMIUM BMW / MINI UI
+# PREMIUM BMW / MINI CSS
 # ============================================================
 
 st.markdown(
@@ -56,28 +39,27 @@ st.markdown(
 
     /* ========================================================
        GLOBAL
-       ======================================================== */
-
-    @import url(
-        'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap'
-    );
-
-    html, body, [class*="css"] {
-        font-family: 'Inter', sans-serif;
-    }
+    ======================================================== */
 
     .stApp {
-        background: #f5f6f8;
-    }
+        background:
+            radial-gradient(
+                circle at 85% 10%,
+                rgba(40, 40, 40, 0.35),
+                transparent 30%
+            ),
+            radial-gradient(
+                circle at 10% 90%,
+                rgba(30, 30, 30, 0.25),
+                transparent 35%
+            ),
+            #080808;
 
-    .main {
-        padding-top: 0rem;
-    }
-
-    .block-container {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        max-width: 1600px;
+        color: #f4f4f4;
+        font-family:
+            "Arial",
+            "Helvetica Neue",
+            sans-serif;
     }
 
 
@@ -86,171 +68,155 @@ st.markdown(
        ======================================================== */
 
     section[data-testid="stSidebar"] {
-        background: #ffffff;
-        border-right: 1px solid #e3e6eb;
+
+        background:
+            linear-gradient(
+                180deg,
+                #0b0b0b 0%,
+                #101010 55%,
+                #080808 100%
+            );
+
+        border-right: 1px solid #242424;
     }
 
     section[data-testid="stSidebar"] > div {
-        padding: 1.4rem 1.25rem;
+        padding-top: 2rem;
     }
 
+    .sidebar-brand {
 
-    /* ========================================================
-       SIDEBAR TITLE
-       ======================================================== */
+        font-size: 11px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+
+        color: #8f8f8f;
+
+        margin-bottom: 5px;
+    }
 
     .sidebar-title {
-        font-size: 17px;
+
+        font-size: 25px;
         font-weight: 700;
-        color: #17233c;
-        letter-spacing: -0.3px;
-        margin-top: 12px;
+
+        letter-spacing: -0.5px;
+
+        color: #ffffff;
+
+        margin-bottom: 25px;
     }
 
-    .sidebar-subtitle {
-        font-size: 10px;
-        font-weight: 600;
-        color: #667085;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        margin-top: 5px;
-    }
+    .sidebar-divider {
 
-
-    /* ========================================================
-       SIDEBAR DIVIDER
-       ======================================================== */
-
-    .sidebar-line {
         height: 1px;
-        background: #e4e7eb;
-        margin: 23px 0;
+        background: #2a2a2a;
+
+        margin: 20px 0;
     }
 
 
     /* ========================================================
-       FILTER LABEL
+       HEADER
        ======================================================== */
 
-    .filter-label {
-        font-size: 10px;
-        font-weight: 700;
-        color: #667085;
+    .top-label {
+
+        font-size: 11px;
+
+        letter-spacing: 4px;
+
         text-transform: uppercase;
-        letter-spacing: 1.2px;
-        margin-bottom: 10px;
+
+        color: #858585;
+
+        margin-bottom: 8px;
+    }
+
+
+    .main-title {
+
+        font-size: clamp(32px, 5vw, 58px);
+
+        font-weight: 700;
+
+        letter-spacing: -2.5px;
+
+        line-height: 1;
+
+        color: #ffffff;
+
+        margin-bottom: 12px;
+    }
+
+
+    .main-title span {
+
+        color: #8f8f8f;
+        font-weight: 300;
+    }
+
+
+    .subtitle {
+
+        font-size: 14px;
+
+        color: #858585;
+
+        letter-spacing: 0.5px;
+
+        max-width: 850px;
+
+        line-height: 1.7;
+
+        margin-bottom: 30px;
     }
 
 
     /* ========================================================
-       STATUS BOX
+       BRAND BADGES
        ======================================================== */
 
-    .status-box {
-        background: #f8fafc;
-        border: 1px solid #e5e9ef;
-        border-radius: 10px;
-        padding: 14px;
-        margin-top: 8px;
-    }
+    .brand-container {
 
-    .status-dot {
-        display: inline-block;
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        background: #35b86b;
-        margin-right: 8px;
-    }
-
-    .status-text {
-        color: #17233c;
-        font-size: 12px;
-        font-weight: 600;
-    }
-
-    .status-subtext {
-        color: #7b8493;
-        font-size: 10px;
-        margin-top: 5px;
-        padding-left: 16px;
-    }
-
-
-    /* ========================================================
-       SIDEBAR FOOTER
-       ======================================================== */
-
-    .sidebar-footer {
-        margin-top: 35px;
-        padding: 15px;
-        background: #f7f8fa;
-        border: 1px solid #e8eaee;
-        border-radius: 10px;
-        color: #667085;
-        font-size: 10px;
-        line-height: 1.6;
-    }
-
-
-    /* ========================================================
-       MAIN HEADER
-       ======================================================== */
-
-    .page-header {
         display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
+
+        gap: 10px;
+
         margin-bottom: 28px;
     }
 
-    .header-left {
-        border-left: 4px solid #1c69d4;
-        padding-left: 17px;
-    }
 
-    .page-title {
-        font-size: 31px;
-        line-height: 1.15;
-        font-weight: 700;
-        color: #17233c;
-        letter-spacing: -1px;
-        margin: 0;
-    }
+    .brand-badge {
 
-    .page-subtitle {
-        color: #737d8e;
-        font-size: 13px;
-        margin-top: 7px;
-    }
+        border: 1px solid #333333;
 
+        background: #111111;
 
-    /* ========================================================
-       REFRESH CARD
-       ======================================================== */
+        padding: 8px 16px;
 
-    .refresh-card {
-        background: #ffffff;
-        border: 1px solid #e4e7ec;
-        border-radius: 11px;
-        padding: 13px 17px;
-        min-width: 210px;
-        box-shadow: 0 4px 18px rgba(20, 30, 50, 0.04);
-    }
+        font-size: 11px;
 
-    .refresh-label {
-        font-size: 9px;
-        text-transform: uppercase;
-        color: #7c8491;
-        letter-spacing: 1px;
-        font-weight: 700;
-    }
+        letter-spacing: 3px;
 
-    .refresh-value {
-        color: #17233c;
-        font-size: 12px;
         font-weight: 600;
-        margin-top: 5px;
+
+        color: #d7d7d7;
+
+    }
+
+
+    .brand-badge.bmw {
+
+        border-left: 3px solid #ffffff;
+
+    }
+
+
+    .brand-badge.mini {
+
+        border-left: 3px solid #777777;
+
     }
 
 
@@ -259,125 +225,257 @@ st.markdown(
        ======================================================== */
 
     .kpi-card {
-        background: #ffffff;
-        border: 1px solid #e4e7ec;
-        border-radius: 12px;
-        min-height: 122px;
-        padding: 21px;
-        box-shadow: 0 4px 18px rgba(20, 30, 50, 0.045);
+
+        background:
+            linear-gradient(
+                145deg,
+                #151515,
+                #0d0d0d
+            );
+
+        border: 1px solid #292929;
+
+        padding: 22px;
+
+        min-height: 125px;
+
+        position: relative;
+
+        overflow: hidden;
+
         transition: all 0.2s ease;
     }
 
+
     .kpi-card:hover {
-        box-shadow: 0 8px 25px rgba(20, 30, 50, 0.08);
-        transform: translateY(-1px);
+
+        border-color: #4a4a4a;
+
+        transform: translateY(-2px);
+
     }
 
-    .kpi-icon {
-        width: 37px;
-        height: 37px;
-        border-radius: 50%;
-        background: #edf4ff;
-        color: #1769d8;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 16px;
-        margin-bottom: 13px;
+
+    .kpi-card::before {
+
+        content: "";
+
+        position: absolute;
+
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 2px;
+
+        background: #eeeeee;
+
     }
+
 
     .kpi-label {
-        font-size: 9px;
-        color: #687386;
+
+        font-size: 10px;
+
+        letter-spacing: 2px;
+
         text-transform: uppercase;
-        letter-spacing: 1px;
-        font-weight: 700;
+
+        color: #777777;
+
+        margin-bottom: 13px;
+
     }
+
 
     .kpi-value {
-        font-size: 25px;
-        color: #17233c;
-        font-weight: 700;
-        margin-top: 4px;
+
+        font-size: 31px;
+
+        font-weight: 600;
+
+        color: #ffffff;
+
+        letter-spacing: -1px;
+
+    }
+
+
+    .kpi-sub {
+
+        font-size: 11px;
+
+        color: #777777;
+
+        margin-top: 7px;
+
     }
 
 
     /* ========================================================
-       SECTION CARD
+       SECTION HEADERS
        ======================================================== */
 
-    .section-card {
-        background: #ffffff;
-        border: 1px solid #e4e7ec;
-        border-radius: 12px;
-        padding: 20px;
-        box-shadow: 0 4px 18px rgba(20, 30, 50, 0.04);
+    .section-number {
+
+        font-size: 10px;
+
+        color: #666666;
+
+        letter-spacing: 3px;
+
+        margin-bottom: 5px;
+
     }
+
 
     .section-title {
-        color: #17233c;
-        font-size: 15px;
-        font-weight: 700;
-        letter-spacing: 0.1px;
+
+        font-size: 23px;
+
+        font-weight: 600;
+
+        color: #ffffff;
+
+        margin-bottom: 5px;
+
     }
 
+
     .section-description {
-        color: #7b8493;
-        font-size: 11px;
-        margin-top: 4px;
+
+        font-size: 12px;
+
+        color: #707070;
+
+        margin-bottom: 20px;
+
     }
 
 
     /* ========================================================
-       DATA TABLE
+       DATA STATUS
+       ======================================================== */
+
+    .status-card {
+
+        display: flex;
+
+        justify-content: space-between;
+
+        align-items: center;
+
+        background: #101010;
+
+        border: 1px solid #262626;
+
+        padding: 12px 16px;
+
+        margin-bottom: 20px;
+
+    }
+
+
+    .status-left {
+
+        font-size: 11px;
+
+        color: #888888;
+
+        letter-spacing: 1px;
+
+    }
+
+
+    .status-right {
+
+        font-size: 11px;
+
+        color: #cfcfcf;
+
+    }
+
+
+    .status-dot {
+
+        display: inline-block;
+
+        width: 7px;
+
+        height: 7px;
+
+        border-radius: 50%;
+
+        background: #bdbdbd;
+
+        margin-right: 7px;
+
+    }
+
+
+    /* ========================================================
+       TABLE
        ======================================================== */
 
     div[data-testid="stDataFrame"] {
-        border-radius: 9px;
-        overflow: hidden;
-        border: 1px solid #e2e6eb;
+
+        border: 1px solid #292929;
+
     }
 
 
     /* ========================================================
-       BUTTON
+       STREAMLIT BUTTONS
        ======================================================== */
 
     .stButton > button {
+
         width: 100%;
-        border-radius: 8px;
-        border: 1px solid #17233c;
-        background: #17233c;
-        color: white;
-        font-weight: 600;
-        font-size: 12px;
-        min-height: 42px;
+
+        border-radius: 0px;
+
+        border: 1px solid #383838;
+
+        background: #151515;
+
+        color: #eeeeee;
+
+        font-size: 11px;
+
+        letter-spacing: 1.5px;
+
+        text-transform: uppercase;
+
+        padding: 10px 14px;
+
     }
 
+
     .stButton > button:hover {
-        background: #243554;
-        border-color: #243554;
-        color: white;
+
+        border-color: #777777;
+
+        background: #202020;
+
+        color: #ffffff;
+
     }
 
 
     /* ========================================================
-       SELECT BOX
+       SELECTBOX
        ======================================================== */
 
     div[data-baseweb="select"] > div {
-        border-radius: 8px;
-        border-color: #dfe4eb;
-        background: #ffffff;
-    }
 
+        background-color: #151515 !important;
 
-    /* ========================================================
-       ALERTS
-       ======================================================== */
+        border-color: #353535 !important;
 
-    div[data-testid="stAlert"] {
-        border-radius: 9px;
+        border-radius: 0px !important;
+
+        color: white !important;
+
     }
 
 
@@ -385,19 +483,28 @@ st.markdown(
        FOOTER
        ======================================================== */
 
-    .luxury-footer {
-        border-top: 1px solid #e1e5ea;
-        margin-top: 35px;
-        padding-top: 20px;
-        text-align: center;
-        color: #7a8391;
-        font-size: 11px;
-    }
+    .footer {
 
-    .footer-brand {
-        color: #17233c;
-        font-weight: 600;
-        font-size: 12px;
+        border-top: 1px solid #252525;
+
+        margin-top: 60px;
+
+        padding-top: 20px;
+
+        padding-bottom: 30px;
+
+        display: flex;
+
+        justify-content: space-between;
+
+        color: #5f5f5f;
+
+        font-size: 10px;
+
+        letter-spacing: 1.5px;
+
+        text-transform: uppercase;
+
     }
 
     </style>
@@ -407,148 +514,81 @@ st.markdown(
 
 
 # ============================================================
-# LOAD DATA FROM SHAREPOINT
+# DATA LOADER
 # ============================================================
 
-@st.cache_data(ttl=300)
+@st.cache_data(ttl=AUTO_REFRESH_SECONDS)
 def load_data():
 
-    response = requests.get(
-        SHAREPOINT_URL,
-        timeout=60,
-        allow_redirects=True
-    )
+    try:
 
-    # --------------------------------------------------------
-    # CHECK HTTP STATUS
-    # --------------------------------------------------------
+        df = pd.read_csv(DATA_URL)
 
-    response.raise_for_status()
+        # ----------------------------------------------------
+        # Remove completely empty rows
+        # ----------------------------------------------------
 
-    # --------------------------------------------------------
-    # CHECK THAT RESPONSE IS ACTUALLY EXCEL
-    # --------------------------------------------------------
+        df = df.dropna(how="all")
 
-    content_type = response.headers.get(
-        "Content-Type",
-        ""
-    ).lower()
+        # ----------------------------------------------------
+        # Remove rows where every value is blank
+        # ----------------------------------------------------
 
-    content = response.content
+        df = df[
+            ~df.apply(
+                lambda row:
+                row.astype(str)
+                .str.strip()
+                .replace("nan", "")
+                .eq("")
+                .all(),
+                axis=1
+            )
+        ]
 
-    # Excel XLSX files start with ZIP signature PK
-    if not content.startswith(b"PK"):
+        # ----------------------------------------------------
+        # Clean column names
+        # ----------------------------------------------------
 
-        raise ValueError(
-            "SharePoint did not return an Excel file. "
-            "It may have returned a Microsoft login page "
-            "instead. Please check that the SharePoint "
-            "file can be downloaded without an interactive login."
-        )
-
-    # --------------------------------------------------------
-    # READ EXCEL
-    # --------------------------------------------------------
-
-    df = pd.read_excel(
-        BytesIO(content),
-        sheet_name=SHEET_NAME,
-        engine="openpyxl"
-    )
-
-    # --------------------------------------------------------
-    # REMOVE COMPLETELY EMPTY ROWS
-    # --------------------------------------------------------
-
-    df = df.dropna(how="all")
-
-    # --------------------------------------------------------
-    # REMOVE ROWS CONTAINING ONLY BLANK STRINGS
-    # --------------------------------------------------------
-
-    df = df[
-        ~df.apply(
-            lambda row:
-            row.astype(str).str.strip().eq("").all(),
-            axis=1
-        )
-    ]
-
-    # --------------------------------------------------------
-    # CLEAN COLUMN NAMES
-    # --------------------------------------------------------
-
-    df.columns = (
-        df.columns
-        .astype(str)
-        .str.strip()
-    )
-
-    # --------------------------------------------------------
-    # REMOVE COLUMNS WITH COMPLETELY EMPTY NAMES
-    # --------------------------------------------------------
-
-    df = df.loc[
-        :,
-        ~(
+        df.columns = (
             df.columns
             .astype(str)
             .str.strip()
-            .isin(["", "nan", "None"])
         )
-    ]
 
-    # --------------------------------------------------------
-    # RESET INDEX
-    # --------------------------------------------------------
+        # ----------------------------------------------------
+        # Remove Excel-generated Unnamed columns
+        # ----------------------------------------------------
 
-    df = df.reset_index(drop=True)
+        df = df.loc[
+            :,
+            ~df.columns.str.startswith("Unnamed")
+        ]
 
-    return df
+        # ----------------------------------------------------
+        # Remove duplicate columns
+        # ----------------------------------------------------
 
+        df = df.loc[
+            :,
+            ~df.columns.duplicated()
+        ]
 
-# ============================================================
-# LOAD SHAREPOINT DATA
-# ============================================================
+        # ----------------------------------------------------
+        # Reset index
+        # ----------------------------------------------------
 
-try:
+        df = df.reset_index(drop=True)
 
-    df = load_data()
+        return df
 
-    connection_status = True
+    except Exception as e:
 
-except requests.exceptions.HTTPError as e:
+        st.error(
+            f"Unable to load dashboard data: {e}"
+        )
 
-    connection_status = False
-
-    st.error(
-        "Unable to access the SharePoint Excel file."
-    )
-
-    st.warning(
-        f"SharePoint returned HTTP error: {e}"
-    )
-
-    st.info(
-        "If the SharePoint file requires Microsoft login, "
-        "the direct-download method cannot authenticate "
-        "on Streamlit Cloud. In that case we can connect "
-        "SharePoint through Power Automate instead."
-    )
-
-    st.stop()
-
-except Exception as e:
-
-    connection_status = False
-
-    st.error(
-        "Unable to load the SharePoint Excel file."
-    )
-
-    st.exception(e)
-
-    st.stop()
+        return pd.DataFrame()
 
 
 # ============================================================
@@ -557,72 +597,47 @@ except Exception as e:
 
 with st.sidebar:
 
-    # --------------------------------------------------------
-    # LOGOS
-    # --------------------------------------------------------
-
-    logo_col1, logo_col2 = st.columns([1, 1.35])
-
-    with logo_col1:
-
-        st.image(
-            BMW_LOGO,
-            width=58
-        )
-
-    with logo_col2:
-
-        st.image(
-            MINI_LOGO,
-            width=82
-        )
-
-
-    # --------------------------------------------------------
-    # SIDEBAR TITLE
-    # --------------------------------------------------------
-
     st.markdown(
-        '<div class="sidebar-title">'
-        'BMW & MINI'
-        '</div>',
+        '<div class="sidebar-brand">BMW GROUP</div>',
         unsafe_allow_html=True
     )
 
     st.markdown(
-        '<div class="sidebar-subtitle">'
-        'Benchmark Dashboard'
-        '</div>',
+        '<div class="sidebar-title">Benchmark</div>',
         unsafe_allow_html=True
     )
-
 
     st.markdown(
-        '<div class="sidebar-line"></div>',
+        '<div class="sidebar-divider"></div>',
         unsafe_allow_html=True
     )
-
-
-    # --------------------------------------------------------
-    # FILTER TITLE
-    # --------------------------------------------------------
 
     st.markdown(
-        '<div class="filter-label">'
-        'Filters'
-        '</div>',
+        '<div class="sidebar-brand">DATA FILTER</div>',
         unsafe_allow_html=True
     )
 
+    # --------------------------------------------------------
+    # Load data
+    # --------------------------------------------------------
 
-    # ========================================================
-    # BUSINESS AREA FILTER
-    # ========================================================
+    df = load_data()
 
-    if "Business Area" in df.columns:
+    business_area_column = None
+
+    for col in df.columns:
+
+        if str(col).strip().lower() == "business area":
+
+            business_area_column = col
+
+            break
+
+
+    if business_area_column is not None:
 
         business_areas = (
-            df["Business Area"]
+            df[business_area_column]
             .dropna()
             .astype(str)
             .str.strip()
@@ -632,192 +647,80 @@ with st.sidebar:
             business_areas[
                 business_areas != ""
             ].unique()
+            .tolist()
         )
 
-        selected_business_area = st.multiselect(
+        selected_business_area = st.selectbox(
             "Business Area",
-            options=business_areas,
-            default=business_areas,
-            key="business_area_filter"
+            ["All"] + business_areas
         )
 
     else:
 
-        st.error(
-            "'Business Area' column was not found."
+        selected_business_area = "All"
+
+        st.warning(
+            "Business Area column not found."
         )
 
-        selected_business_area = []
+
+    st.markdown(
+        '<div class="sidebar-divider"></div>',
+        unsafe_allow_html=True
+    )
 
 
-    # ========================================================
-    # RESET FILTER
-    # ========================================================
+    # --------------------------------------------------------
+    # Refresh button
+    # --------------------------------------------------------
 
     if st.button(
-        "↻  Reset Filters",
+        "↻  Refresh Data",
         use_container_width=True
     ):
 
-        st.session_state.business_area_filter = (
-            business_areas
-            if "Business Area" in df.columns
-            else []
-        )
+        st.cache_data.clear()
 
         st.rerun()
 
 
     st.markdown(
-        '<div class="sidebar-line"></div>',
+        '<div class="sidebar-divider"></div>',
         unsafe_allow_html=True
     )
 
 
-    # ========================================================
-    # DATA STATUS
-    # ========================================================
+    # --------------------------------------------------------
+    # Data information
+    # --------------------------------------------------------
 
-    st.markdown(
-        '<div class="filter-label">'
-        'Data Status'
-        '</div>',
-        unsafe_allow_html=True
-    )
+    if not df.empty:
 
+        st.markdown(
+            f"""
+            <div style="
+                font-size:10px;
+                letter-spacing:1.5px;
+                color:#666;
+                line-height:2;
+            ">
 
-    st.markdown(
-        """
-        <div class="status-box">
-
-            <div>
-                <span class="status-dot"></span>
-
-                <span class="status-text">
-                    Connected
-                </span>
-            </div>
-
-            <div class="status-subtext">
-                SharePoint / Dash
-            </div>
-
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
-
-
-    # ========================================================
-    # LAST REFRESH
-    # ========================================================
-
-    st.markdown(
-        '<div class="filter-label" '
-        'style="margin-top:22px;">'
-        'Last Refresh'
-        '</div>',
-        unsafe_allow_html=True
-    )
-
-
-    st.markdown(
-        f"""
-        <div style="
-            color:#17233c;
-            font-size:12px;
-            font-weight:600;
-            margin-top:8px;
-        ">
-
-            ◷ &nbsp;
-            {datetime.now().strftime("%d %b %Y %H:%M:%S")}
-
-        </div>
-
-        <div style="
-            color:#7a8391;
-            font-size:10px;
-            margin-top:5px;
-        ">
-
-            Cache refresh every 5 minutes
-
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
-
-
-    # ========================================================
-    # SIDEBAR FOOTER
-    # ========================================================
-
-    st.markdown(
-        """
-        <div class="sidebar-footer">
-
-            <strong>◆</strong>
-            &nbsp; Driving Performance.<br>
-
-            <span style="padding-left:20px;">
-                Delivering Excellence.
+            ROWS<br>
+            <span style="color:#aaa;">
+            {len(df):,}
             </span>
 
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
+            <br><br>
 
+            COLUMNS<br>
+            <span style="color:#aaa;">
+            {len(df.columns):,}
+            </span>
 
-# ============================================================
-# APPLY BUSINESS AREA FILTER
-# ============================================================
-
-filtered_df = df.copy()
-
-
-if "Business Area" in filtered_df.columns:
-
-    if selected_business_area:
-
-        filtered_df = filtered_df[
-            filtered_df["Business Area"]
-            .astype(str)
-            .str.strip()
-            .isin(selected_business_area)
-        ]
-
-    else:
-
-        filtered_df = filtered_df.iloc[0:0]
-
-
-# ============================================================
-# RESET INDEX AFTER FILTER
-# ============================================================
-
-filtered_df = filtered_df.reset_index(drop=True)
-
-
-# ============================================================
-# REMOVE FIRST TWO COLUMNS FROM DISPLAY
-# ============================================================
-
-if len(filtered_df.columns) > 2:
-
-    display_df = filtered_df.iloc[:, 2:].copy()
-
-else:
-
-    display_df = pd.DataFrame()
-
-
-# ============================================================
-# RESET DISPLAY INDEX
-# ============================================================
-
-display_df = display_df.reset_index(drop=True)
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
 
 
 # ============================================================
@@ -825,34 +728,46 @@ display_df = display_df.reset_index(drop=True)
 # ============================================================
 
 st.markdown(
+    '<div class="top-label">BMW GROUP / MIS & BUSINESS INTELLIGENCE</div>',
+    unsafe_allow_html=True
+)
+
+st.markdown(
     """
-    <div class="page-header">
+    <div class="main-title">
+        BMW <span>&</span> MINI
+        <span>Benchmark</span>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
-        <div class="header-left">
+st.markdown(
+    """
+    <div class="subtitle">
+        A centralized benchmarking view of business performance,
+        designed for clean comparison, operational visibility,
+        and management decision-making.
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
-            <div class="page-title">
-                BMW & MINI Benchmark Dashboard
-            </div>
 
-            <div class="page-subtitle">
-                Real-time insights. Smarter performance.
-            </div>
+# ============================================================
+# BRAND BADGES
+# ============================================================
 
+st.markdown(
+    """
+    <div class="brand-container">
+
+        <div class="brand-badge bmw">
+            BMW
         </div>
 
-        <div class="refresh-card">
-
-            <div class="refresh-label">
-                Last Refresh
-            </div>
-
-            <div class="refresh-value">
-                ◷ &nbsp;
-    """
-    + datetime.now().strftime("%d %b %Y %H:%M:%S")
-    + """
-            </div>
-
+        <div class="brand-badge mini">
+            MINI
         </div>
 
     </div>
@@ -862,24 +777,94 @@ st.markdown(
 
 
 # ============================================================
-# CONNECTION STATUS
+# ERROR HANDLING
 # ============================================================
 
-st.success(
-    f"Connected • SharePoint / {SHEET_NAME} sheet"
+if df.empty:
+
+    st.error(
+        "No data could be loaded from the GitHub CSV."
+    )
+
+    st.info(
+        "Please check that benchmark_data.csv exists "
+        "in the Benchamrk repository."
+    )
+
+    st.stop()
+
+
+# ============================================================
+# APPLY BUSINESS AREA FILTER
+# ============================================================
+
+filtered_df = df.copy()
+
+
+if (
+    business_area_column is not None
+    and selected_business_area != "All"
+):
+
+    filtered_df = filtered_df[
+        filtered_df[business_area_column]
+        .astype(str)
+        .str.strip()
+        == selected_business_area
+    ]
+
+
+# ============================================================
+# KPI SECTION
+# ============================================================
+
+st.markdown(
+    """
+    <div class="section-number">
+        01 / PERFORMANCE OVERVIEW
+    </div>
+
+    <div class="section-title">
+        Benchmark Snapshot
+    </div>
+
+    <div class="section-description">
+        Current view based on the selected Business Area.
+    </div>
+    """,
+    unsafe_allow_html=True
 )
 
 
 # ============================================================
-# KPI CARDS
+# KPI CALCULATIONS
 # ============================================================
+
+row_count = len(filtered_df)
+
+column_count = len(filtered_df.columns)
+
+business_area_count = 0
+
+if business_area_column is not None:
+
+    business_area_count = (
+        filtered_df[business_area_column]
+        .nunique()
+    )
+
+
+numeric_columns = (
+    filtered_df
+    .select_dtypes(include="number")
+    .columns
+)
+
+numeric_count = len(numeric_columns)
+
 
 k1, k2, k3, k4 = st.columns(4)
 
-
-# ------------------------------------------------------------
-# KPI 1
-# ------------------------------------------------------------
 
 with k1:
 
@@ -887,16 +872,16 @@ with k1:
         f"""
         <div class="kpi-card">
 
-            <div class="kpi-icon">
-                ▱
-            </div>
-
             <div class="kpi-label">
-                Total Records
+                Records
             </div>
 
             <div class="kpi-value">
-                {len(filtered_df):,}
+                {row_count:,}
+            </div>
+
+            <div class="kpi-sub">
+                Filtered records
             </div>
 
         </div>
@@ -904,10 +889,6 @@ with k1:
         unsafe_allow_html=True
     )
 
-
-# ------------------------------------------------------------
-# KPI 2
-# ------------------------------------------------------------
 
 with k2:
 
@@ -915,16 +896,16 @@ with k2:
         f"""
         <div class="kpi-card">
 
-            <div class="kpi-icon">
-                ▦
-            </div>
-
             <div class="kpi-label">
-                Display Columns
+                Business Areas
             </div>
 
             <div class="kpi-value">
-                {len(display_df.columns):,}
+                {business_area_count:,}
+            </div>
+
+            <div class="kpi-sub">
+                Active categories
             </div>
 
         </div>
@@ -932,10 +913,6 @@ with k2:
         unsafe_allow_html=True
     )
 
-
-# ------------------------------------------------------------
-# KPI 3
-# ------------------------------------------------------------
 
 with k3:
 
@@ -943,16 +920,16 @@ with k3:
         f"""
         <div class="kpi-card">
 
-            <div class="kpi-icon">
-                ◫
-            </div>
-
             <div class="kpi-label">
-                Business Areas
+                Data Fields
             </div>
 
             <div class="kpi-value">
-                {len(selected_business_area):,}
+                {column_count:,}
+            </div>
+
+            <div class="kpi-sub">
+                Available columns
             </div>
 
         </div>
@@ -960,10 +937,6 @@ with k3:
         unsafe_allow_html=True
     )
 
-
-# ------------------------------------------------------------
-# KPI 4
-# ------------------------------------------------------------
 
 with k4:
 
@@ -971,16 +944,16 @@ with k4:
         f"""
         <div class="kpi-card">
 
-            <div class="kpi-icon">
-                ◷
-            </div>
-
             <div class="kpi-label">
-                Records Displayed
+                Numeric KPIs
             </div>
 
             <div class="kpi-value">
-                {len(display_df):,}
+                {numeric_count:,}
+            </div>
+
+            <div class="kpi-sub">
+                Analytical fields
             </div>
 
         </div>
@@ -989,26 +962,29 @@ with k4:
     )
 
 
+st.markdown("<br>", unsafe_allow_html=True)
+
+
 # ============================================================
-# TABLE SECTION
+# DATA STATUS
 # ============================================================
 
-st.markdown(
-    "<br>",
-    unsafe_allow_html=True
+current_time = datetime.now().strftime(
+    "%d %b %Y  |  %H:%M"
 )
 
-
 st.markdown(
-    """
-    <div class="section-card">
+    f"""
+    <div class="status-card">
 
-        <div class="section-title">
-            ▦ &nbsp; DASH SHEET DATA
+        <div class="status-left">
+            <span class="status-dot"></span>
+            LIVE DATA CONNECTION
         </div>
 
-        <div class="section-description">
-            Benchmark data based on the selected Business Area
+        <div class="status-right">
+            Last dashboard refresh:
+            {current_time}
         </div>
 
     </div>
@@ -1021,120 +997,74 @@ st.markdown(
 # DATA TABLE
 # ============================================================
 
-if display_df.empty:
+st.markdown(
+    """
+    <div class="section-number">
+        02 / BENCHMARK DATA
+    </div>
 
-    st.warning(
-        "No data available for the selected Business Area."
-    )
+    <div class="section-title">
+        Business Performance
+    </div>
+
+    <div class="section-description">
+        Detailed benchmark data from the Dash dataset.
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+
+# ============================================================
+# REMOVE FIRST TWO COLUMNS
+# ============================================================
+
+if len(filtered_df.columns) > 2:
+
+    display_df = filtered_df.iloc[:, 2:].copy()
 
 else:
 
-    st.dataframe(
-        display_df,
-        use_container_width=True,
-        height=600,
-        hide_index=True
-    )
+    display_df = filtered_df.copy()
 
 
 # ============================================================
-# COLUMN INFORMATION
+# REMOVE COMPLETELY EMPTY COLUMNS
 # ============================================================
 
-st.markdown(
-    "<br>",
-    unsafe_allow_html=True
+display_df = display_df.dropna(
+    axis=1,
+    how="all"
 )
 
 
-with st.expander("⌄   COLUMN INFORMATION"):
-
-    if not display_df.empty:
-
-        column_info = pd.DataFrame(
-            {
-                "Column Name": display_df.columns,
-                "Data Type": (
-                    display_df
-                    .dtypes
-                    .astype(str)
-                    .values
-                ),
-                "Non-Empty Values": (
-                    display_df
-                    .notna()
-                    .sum()
-                    .values
-                )
-            }
-        )
-
-        st.dataframe(
-            column_info,
-            use_container_width=True,
-            hide_index=True
-        )
-
-    else:
-
-        st.info(
-            "No columns available."
-        )
-
-
 # ============================================================
-# REFRESH SECTION
+# REMOVE COMPLETELY EMPTY ROWS AGAIN
 # ============================================================
 
-st.markdown(
-    "<br>",
-    unsafe_allow_html=True
+display_df = display_df.dropna(
+    axis=0,
+    how="all"
 )
 
 
-refresh_col1, refresh_col2 = st.columns(
-    [1, 5]
+# ============================================================
+# REPLACE NaN FOR DISPLAY
+# ============================================================
+
+display_df = display_df.fillna("")
+
+
+# ============================================================
+# DISPLAY TABLE
+# ============================================================
+
+st.dataframe(
+    display_df,
+    use_container_width=True,
+    hide_index=True,
+    height=560
 )
-
-
-# ------------------------------------------------------------
-# MANUAL REFRESH
-# ------------------------------------------------------------
-
-with refresh_col1:
-
-    if st.button(
-        "↻  Refresh Data",
-        use_container_width=True
-    ):
-
-        st.cache_data.clear()
-
-        st.rerun()
-
-
-# ------------------------------------------------------------
-# REFRESH INFORMATION
-# ------------------------------------------------------------
-
-with refresh_col2:
-
-    st.markdown(
-        """
-        <div style="
-            padding-top:11px;
-            color:#7a8391;
-            font-size:11px;
-        ">
-
-            Data is loaded directly from the SharePoint
-            Excel workbook. Cache expires automatically
-            every 5 minutes.
-
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
 
 
 # ============================================================
@@ -1143,17 +1073,33 @@ with refresh_col2:
 
 st.markdown(
     """
-    <div class="luxury-footer">
+    <div class="footer">
 
-        <span class="footer-brand">
-            BMW & MINI Benchmark Dashboard
-        </span>
+        <div>
+            BMW GROUP · BENCHMARKING
+        </div>
 
-        &nbsp;&nbsp;•&nbsp;&nbsp;
-
-        Driving Performance. Delivering Excellence.
+        <div>
+            MIS / BUSINESS INTELLIGENCE
+        </div>
 
     </div>
+    """,
+    unsafe_allow_html=True
+)
+
+
+# ============================================================
+# AUTO REFRESH
+# ============================================================
+
+st.markdown(
+    f"""
+    <script>
+        setTimeout(function() {{
+            window.location.reload();
+        }}, {AUTO_REFRESH_SECONDS * 1000});
+    </script>
     """,
     unsafe_allow_html=True
 )
