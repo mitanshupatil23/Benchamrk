@@ -20,7 +20,7 @@ st.set_page_config(
 # EXCEL CONFIGURATION
 # ============================================================
 
-EXCEL_FILE = r"C:\Users\mitanshu.patil\OneDrive - INFINITY CARS PRIVATE LIMITED\Desktop\Benchmarking KPI Master.xlsx    "
+EXCEL_FILE = r"C:\Users\mitanshu.patil\OneDrive - INFINITY CARS PRIVATE LIMITED\Desktop\Benchmarking KPI Master.xlsx"
 
 SHEET_NAME = "Dash"
 
