@@ -1634,9 +1634,7 @@ st.markdown(
 <div class="status-left">
 
 <div class="live-dot"></div>
-
 LIVE BENCHMARK DATA
-
 </div>
 
 
