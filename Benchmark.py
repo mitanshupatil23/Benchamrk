@@ -3077,7 +3077,7 @@ setTimeout(
 
     }},
 
-    {AUTO_REFRESH_SECONDS * 1000}
+    {AUTO_REFRESH_SECONDS * 100}
 
 );
 
