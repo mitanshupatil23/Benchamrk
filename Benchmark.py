@@ -5013,14 +5013,6 @@ Reporting Period Summary
             "Backlog"
         ].apply(format_number)
 
-
-        display_monthly[
-            "Excess"
-        ] = display_monthly[
-            "Excess"
-        ].apply(format_number)
-
-
         st.dataframe(
 
             display_monthly,
