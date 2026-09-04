@@ -5093,24 +5093,6 @@ Reporting Period Summary
                     f"{format_number(previous['Backlog'] - latest['Backlog'])} units."
                 )
 
-
-            if (
-                latest["Excess"]
-                >
-                previous["Excess"]
-            ):
-
-                trend_insights.append(
-                    f"Excess increased by "
-                    f"{format_number(latest['Excess'] - previous['Excess'])} units."
-                )
-
-            elif (
-                latest["Excess"]
-                <
-                previous["Excess"]
-            ):
-
                 trend_insights.append(
                     f"Excess reduced by "
                     f"{format_number(previous['Excess'] - latest['Excess'])} units."
