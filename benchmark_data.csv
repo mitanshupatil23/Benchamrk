@@ -1,349 +1,349 @@
 @odata.etag,ItemInternalId,Business Area,Month,Input 1,Input 2,Achieved,Projection,Backlog %,Backlog Units,Target need to achive,Excess,Backlog Units ( Per day ),Target need to achive ( per day ),Daily total Target
-,f80c2971-d07b-48c1-bfc5-2f39b8ad3b96,Retail Target Achievement – BMW,Jan'26,100,100,100,120,0.2,20,0,0,1.66666666666667,0,1.66666666666667
-,93d5c1e7-e797-4fc2-86ff-1d4ec5f9d872,Retail Target Achievement – BMW,Feb'26,95,100,95,115,0.2,19,5,0,1.58333333333333,0.416666666666667,2
-,1712ad81-b9f7-441e-bfd9-a88973c6ae6e,Retail Target Achievement – BMW,Mar'26,120,100,120,118,0,0,0,20,0,0,0
-,d91d6bfb-834c-4acb-8c95-967c4a206436,Retail Target Achievement – BMW,Apr'26,121,100,121,119,0,0,0,21,0,0,0
-,5381055d-e438-4b3c-aa9e-01406a35d60d,Retail Target Achievement – BMW,May'26,85,100,85,120,0.35,29.75,15,0,2.47916666666667,1.25,3.72916666666667
-,7aec137f-aa9a-4442-887e-4cb8990f364b,Retail Target Achievement – BMW,Jun'26,120,100,120,125,0.05,6,0,0,1,0,1
-,46fd0d33-bcc5-406d-8623-e6c36b36a4cc,Retail Target Achievement – BMW,Jul'26,130,100,130,110,0,0,0,30,0,0,0
-,ce4fe4d3-9c4f-46e9-bb1e-d6e651688d27,Retail Target Achievement – BMW,Aug'26,0,0,0,0,0,0,0,0,0,0,0
-,22ba3270-c7c2-4caf-b633-c1c70100ddca,Retail Target Achievement – BMW,Sept'26,0,0,0,0,0,0,0,0,0,0,0
-,abb79013-1bdb-4742-b27a-fed263f4e2a8,Retail Target Achievement – BMW,Oct'26,0,0,0,0,0,0,0,0,0,0,0
-,c7bed173-9870-44fa-bee0-5b2c581576ad,Retail Target Achievement – BMW,Nov'26,0,0,0,0,0,0,0,0,0,0,0
-,3c6f494f-59f8-4ffc-8499-d1c14118b4b5,Retail Target Achievement – BMW,Dec'26,0,0,0,0,0,0,0,0,0,0,0
-,de5e67f4-713e-457b-b653-43461324dfa8,MB Index,Jan'26,0,0,0,0,0,0,0,0,0,0,0
-,ac738b81-0083-4651-bb1f-1c4ed9d7c1f6,MB Index,Feb'26,0,0,0,0,0,0,0,0,0,0,0
-,b0342c92-4e3e-4c8a-b535-b47b9e4d4786,MB Index,Mar'26,0,0,0,0,0,0,0,0,0,0,0
-,78a8dad1-1bda-4a37-842d-b296e75be49f,MB Index,Apr'26,0,0,0,0,0,0,0,0,0,0,0
-,86ffb2f7-b883-4923-9e5e-b0bfd7d5a615,MB Index,May'26,0,0,0,0,0,0,0,0,0,0,0
-,7bcc1036-9936-4c55-8672-d5f47f6f635e,MB Index,Jun'26,0,0,0,0,0,0,0,0,0,0,0
-,b9c5d9f2-bb34-4851-a92a-b17bd28727b9,MB Index,Jul'26,0,0,0,0,0,0,0,0,0,0,0
-,6afbfbd3-625e-4012-852d-898fa116b4c7,MB Index,Aug'26,0,0,0,0,0,0,0,0,0,0,0
-,e03ea9b3-173a-4d62-a96e-44c27f99cbff,MB Index,Sept'26,0,0,0,0,0,0,0,0,0,0,0
-,a9656a72-3391-4925-b580-3d6cdf1fd764,MB Index,Oct'26,0,0,0,0,0,0,0,0,0,0,0
-,b06e53c0-8e45-439e-ace7-60ff649dcf0c,MB Index,Nov'26,0,0,0,0,0,0,0,0,0,0,0
-,21a9d242-0cf0-4309-a992-61a02c6221fd,MB Index,Dec'26,0,0,0,0,0,0,0,0,0,0,0
-,b4cbfb70-47a6-454f-bd0d-d078d2a60c6b,MB Index (Non UKL),Jan'26,0,0,0,0,0,0,0,0,0,0,0
-,7b8a095d-b14f-4468-85e7-d6383362fea4,MB Index (Non UKL),Feb'26,0,0,0,0,0,0,0,0,0,0,0
-,9ed96971-02ac-46e8-b61c-22eb9b5f01c6,MB Index (Non UKL),Mar'26,0,0,0,0,0,0,0,0,0,0,0
-,e458e257-745b-49b2-94ea-f33c8b5bd51e,MB Index (Non UKL),Apr'26,0,0,0,0,0,0,0,0,0,0,0
-,e9681aac-6651-4c29-9121-9ab1a2d222bd,MB Index (Non UKL),May'26,0,0,0,0,0,0,0,0,0,0,0
-,b2c60730-fbbd-46aa-84af-6c867db7ff0c,MB Index (Non UKL),Jun'26,0,0,0,0,0,0,0,0,0,0,0
-,3ef50edd-5e6e-4af5-a3e1-91d130102f5b,MB Index (Non UKL),Jul'26,0,0,0,0,0,0,0,0,0,0,0
-,a9a71642-fece-41aa-9895-38ef12224967,MB Index (Non UKL),Aug'26,0,0,0,0,0,0,0,0,0,0,0
-,240ba764-e55b-4613-a0eb-40a67ae47f8a,MB Index (Non UKL),Sept'26,0,0,0,0,0,0,0,0,0,0,0
-,f33ac951-2860-4e94-b512-04d8627763b7,MB Index (Non UKL),Oct'26,0,0,0,0,0,0,0,0,0,0,0
-,cef60ed0-62c2-4543-ad68-fbe20f6f7948,MB Index (Non UKL),Nov'26,0,0,0,0,0,0,0,0,0,0,0
-,ff51406f-e413-41f4-bc26-af086751a2bd,MB Index (Non UKL),Dec'26,0,0,0,0,0,0,0,0,0,0,0
-,a19ef8f3-7fe5-48d2-8b30-19438f85872d,Corporate Sales Penetration,Jan'26,0,0,0,0,0,0,0,0,0,0,0
-,39b5e497-648e-4ec3-91b8-f568fb0d0559,Corporate Sales Penetration,Feb'26,0,0,0,0,0,0,0,0,0,0,0
-,12a6a538-768a-4704-bc47-0a99579c549f,Corporate Sales Penetration,Mar'26,0,0,0,0,0,0,0,0,0,0,0
-,bd41b473-45e2-4d4b-b35d-eb5007a8a6f6,Corporate Sales Penetration,Apr'26,0,0,0,0,0,0,0,0,0,0,0
-,719df48b-57d6-4872-b86c-8cc722cc3ad3,Corporate Sales Penetration,May'26,0,0,0,0,0,0,0,0,0,0,0
-,99271883-ead3-4d47-a66f-dda2904261e5,Corporate Sales Penetration,Jun'26,0,0,0,0,0,0,0,0,0,0,0
-,b687b25a-69bd-4938-8e8d-da7ee1cfc529,Corporate Sales Penetration,Jul'26,0,0,0,0,0,0,0,0,0,0,0
-,6f50d2f5-7ace-4cb6-94c0-73a1cdfad661,Corporate Sales Penetration,Aug'26,0,0,0,0,0,0,0,0,0,0,0
-,319f9c95-250b-4e09-8179-ee171ae02812,Corporate Sales Penetration,Sept'26,0,0,0,0,0,0,0,0,0,0,0
-,4a114d03-d2af-4a5d-8200-d6687b352b1e,Corporate Sales Penetration,Oct'26,0,0,0,0,0,0,0,0,0,0,0
-,0423b3ca-1702-4506-9cac-ca048bad1b09,Corporate Sales Penetration,Nov'26,0,0,0,0,0,0,0,0,0,0,0
-,b9259c9c-84cc-42e2-ac28-04474f78450e,Corporate Sales Penetration,Dec'26,0,0,0,0,0,0,0,0,0,0,0
-,32126667-83de-446e-af82-90ec0c781451,BMW to BMW Trade-In,Jan'26,0,0,0,0,0,0,0,0,0,0,0
-,8b676c92-8a57-4478-9ece-f340e182b834,BMW to BMW Trade-In,Feb'26,0,0,0,0,0,0,0,0,0,0,0
-,d2684f99-7228-4f47-b7a9-26a22e65520d,BMW to BMW Trade-In,Mar'26,0,0,0,0,0,0,0,0,0,0,0
-,c5ea40ca-5e51-4498-82ae-8e95157eb22e,BMW to BMW Trade-In,Apr'26,0,0,0,0,0,0,0,0,0,0,0
-,2b509528-333f-4339-9d79-c537d61443aa,BMW to BMW Trade-In,May'26,0,0,0,0,0,0,0,0,0,0,0
-,14a57c63-6c3c-4aa8-8065-ba196c4c1f6b,BMW to BMW Trade-In,Jun'26,0,0,0,0,0,0,0,0,0,0,0
-,e4ef3c55-1040-43b9-b114-da5b396d14ad,BMW to BMW Trade-In,Jul'26,0,0,0,0,0,0,0,0,0,0,0
-,263d5352-daf0-4889-af15-c102c94b37ea,BMW to BMW Trade-In,Aug'26,0,0,0,0,0,0,0,0,0,0,0
-,7d98602f-a945-4a6e-a9d8-70b72dfac1c5,BMW to BMW Trade-In,Sept'26,0,0,0,0,0,0,0,0,0,0,0
-,7203d361-1e4f-485e-848b-ddedda71c92e,BMW to BMW Trade-In,Oct'26,0,0,0,0,0,0,0,0,0,0,0
-,a3dbf182-c359-4af4-8ff9-0b612ebe08b3,BMW to BMW Trade-In,Nov'26,0,0,0,0,0,0,0,0,0,0,0
-,6cef750f-3257-4c59-9f7c-feebf3facce2,BMW to BMW Trade-In,Dec'26,0,0,0,0,0,0,0,0,0,0,0
-,7823935d-4c2f-42f4-9c0b-e4bbc317271b,BPS Retail to New Car Ratio,Jan'26,0,0,0,0,0,0,0,0,0,0,0
-,1604903c-680f-4eec-97cf-e58377da88ba,BPS Retail to New Car Ratio,Feb'26,0,0,0,0,0,0,0,0,0,0,0
-,23516204-4c77-4bd9-9c44-a99dd5a0525f,BPS Retail to New Car Ratio,Mar'26,0,0,0,0,0,0,0,0,0,0,0
-,84db8ddf-8970-41b2-ba52-1745b0c0b3ca,BPS Retail to New Car Ratio,Apr'26,0,0,0,0,0,0,0,0,0,0,0
-,3e54ea96-2aec-4d84-9cba-f1969e9e64d8,BPS Retail to New Car Ratio,May'26,0,0,0,0,0,0,0,0,0,0,0
-,16e02db6-4903-47a5-b42d-5473812d1b41,BPS Retail to New Car Ratio,Jun'26,0,0,0,0,0,0,0,0,0,0,0
-,e45658bf-e3ed-4ea0-8c64-d5aefeeb4e88,BPS Retail to New Car Ratio,Jul'26,0,0,0,0,0,0,0,0,0,0,0
-,f84ff837-151d-43e5-8e38-298963f3703d,BPS Retail to New Car Ratio,Aug'26,0,0,0,0,0,0,0,0,0,0,0
-,da300b1b-4e86-458e-a984-d356c9e27f47,BPS Retail to New Car Ratio,Sept'26,0,0,0,0,0,0,0,0,0,0,0
-,7b3fcc6a-ab61-4ea1-86fb-7ab618a01bc3,BPS Retail to New Car Ratio,Oct'26,0,0,0,0,0,0,0,0,0,0,0
-,711b7ff5-9efc-44de-a3e6-53eff2ad6fe5,BPS Retail to New Car Ratio,Nov'26,0,0,0,0,0,0,0,0,0,0,0
-,29e475b8-2be9-4f63-a586-3c8ab30900e0,BPS Retail to New Car Ratio,Dec'26,0,0,0,0,0,0,0,0,0,0,0
-,8628fa29-5e3c-444b-8f15-fc1f3729865d,Customer Pay,Jan'26,0,0,0,0,0,0,0,0,0,0,0
-,81e61137-1e38-4dd9-af6b-e47ee316a729,Customer Pay,Feb'26,0,0,0,0,0,0,0,0,0,0,0
-,6feb8fbb-2deb-4f74-8ebd-1548482cf470,Customer Pay,Mar'26,0,0,0,0,0,0,0,0,0,0,0
-,723fd596-72ba-4cde-921b-6198ea4c1641,Customer Pay,Apr'26,0,0,0,0,0,0,0,0,0,0,0
-,d8f9d77a-0e17-4810-b576-57368bed3f2e,Customer Pay,May'26,0,0,0,0,0,0,0,0,0,0,0
-,9e72d2f4-1095-4f2b-87d8-d46f9664242b,Customer Pay,Jun'26,0,0,0,0,0,0,0,0,0,0,0
-,29c22810-0ec0-4c91-b837-afdc424bee21,Customer Pay,Jul'26,0,0,0,0,0,0,0,0,0,0,0
-,87caa712-3042-45e4-82de-d07d5aa609cb,Customer Pay,Aug'26,0,0,0,0,0,0,0,0,0,0,0
-,e7dea90a-60a0-4f4e-a2d1-b5f6846c7f3e,Customer Pay,Sept'26,0,0,0,0,0,0,0,0,0,0,0
-,341a3ec6-afc3-4f09-8dcd-ab134050315b,Customer Pay,Oct'26,0,0,0,0,0,0,0,0,0,0,0
-,fdd151b4-672f-4827-a4d8-15beab8c36fe,Customer Pay,Nov'26,0,0,0,0,0,0,0,0,0,0,0
-,f7a823e9-37f0-42c6-a1f2-f1774ccc75c6,Customer Pay,Dec'26,0,0,0,0,0,0,0,0,0,0,0
-,25099bf6-b9a5-4ad4-aaa2-e502028c5ea1,"Parts (PC 5,8,9) Value per Throughput",Jan'26,0,0,0,0,0,0,0,0,0,0,0
-,4a9fca9e-bb76-4446-978f-0aa9c4e46da7,"Parts (PC 5,8,9) Value per Throughput",Feb'26,0,0,0,0,0,0,0,0,0,0,0
-,d7472ddd-f295-430e-b40a-728955ed4a85,"Parts (PC 5,8,9) Value per Throughput",Mar'26,0,0,0,0,0,0,0,0,0,0,0
-,75b3f4eb-4d0c-477b-8e1f-02b84a2c466d,"Parts (PC 5,8,9) Value per Throughput",Apr'26,0,0,0,0,0,0,0,0,0,0,0
-,bb7097e0-83df-4038-ae73-e6c182889ff9,"Parts (PC 5,8,9) Value per Throughput",May'26,0,0,0,0,0,0,0,0,0,0,0
-,b21cfb2d-65e5-464e-986b-ab3689a5f9f4,"Parts (PC 5,8,9) Value per Throughput",Jun'26,0,0,0,0,0,0,0,0,0,0,0
-,92689635-b698-4ac1-a5f1-e683009aa0d1,"Parts (PC 5,8,9) Value per Throughput",Jul'26,0,0,0,0,0,0,0,0,0,0,0
-,c2a6f541-1456-48ba-9a7a-6911b8565ed1,"Parts (PC 5,8,9) Value per Throughput",Aug'26,0,0,0,0,0,0,0,0,0,0,0
-,9b7e5fb9-43d7-4958-a87f-255d9abe3ca8,"Parts (PC 5,8,9) Value per Throughput",Sept'26,0,0,0,0,0,0,0,0,0,0,0
-,c971115a-1556-4696-a497-b4e48600ea12,"Parts (PC 5,8,9) Value per Throughput",Oct'26,0,0,0,0,0,0,0,0,0,0,0
-,49784f9d-74eb-4afe-8122-35d9e656fbea,"Parts (PC 5,8,9) Value per Throughput",Nov'26,0,0,0,0,0,0,0,0,0,0,0
-,da6695d0-0820-4a69-b46b-0cf1c579abd6,"Parts (PC 5,8,9) Value per Throughput",Dec'26,0,0,0,0,0,0,0,0,0,0,0
-,d4b75d08-9a24-4f9e-923e-9ac0739b9ca2,Accessories (PC 3&7) Value per New Car,Jan'26,0,0,0,0,0,0,0,0,0,0,0
-,6285673d-a812-4a08-8fd2-98deec4abc09,Accessories (PC 3&7) Value per New Car,Feb'26,0,0,0,0,0,0,0,0,0,0,0
-,a5dea485-73c5-430d-8979-3f272f9ac11c,Accessories (PC 3&7) Value per New Car,Mar'26,0,0,0,0,0,0,0,0,0,0,0
-,be7a9984-01ba-4f57-8e95-0b0bd71db856,Accessories (PC 3&7) Value per New Car,Apr'26,0,0,0,0,0,0,0,0,0,0,0
-,c7ee7b15-bbda-4577-a476-e9430811dd61,Accessories (PC 3&7) Value per New Car,May'26,0,0,0,0,0,0,0,0,0,0,0
-,cf49251c-4c08-4135-8004-221cb41cf3a9,Accessories (PC 3&7) Value per New Car,Jun'26,0,0,0,0,0,0,0,0,0,0,0
-,6248e2cc-edef-419f-9123-bb40b1384090,Accessories (PC 3&7) Value per New Car,Jul'26,0,0,0,0,0,0,0,0,0,0,0
-,ff9ef548-e796-431a-bb6c-3594a5bd08a8,Accessories (PC 3&7) Value per New Car,Aug'26,0,0,0,0,0,0,0,0,0,0,0
-,8f8cb335-3b23-4ee8-970f-555f2666a270,Accessories (PC 3&7) Value per New Car,Sept'26,0,0,0,0,0,0,0,0,0,0,0
-,fdcb29a4-b10b-4bc9-ac57-57e63b2a3259,Accessories (PC 3&7) Value per New Car,Oct'26,0,0,0,0,0,0,0,0,0,0,0
-,52935b0a-90ef-4827-9cf0-892fcdeeefe7,Accessories (PC 3&7) Value per New Car,Nov'26,0,0,0,0,0,0,0,0,0,0,0
-,6e3fc5f6-12df-49b5-bbc1-35fddd4c5cd0,Accessories (PC 3&7) Value per New Car,Dec'26,0,0,0,0,0,0,0,0,0,0,0
-,e618db39-0d48-460a-8741-f6df5ba9b6b1,PSV Watch Rate,Jan'26,0,0,0,0,0,0,0,0,0,0,0
-,4d951e8d-8916-45b4-a600-ccd4900f2919,PSV Watch Rate,Feb'26,0,0,0,0,0,0,0,0,0,0,0
-,c9367577-8567-441c-8b91-d90a547df412,PSV Watch Rate,Mar'26,0,0,0,0,0,0,0,0,0,0,0
-,8d4026bc-2493-4062-acc2-21afed72ace1,PSV Watch Rate,Apr'26,0,0,0,0,0,0,0,0,0,0,0
-,7c771770-ef06-48a2-b054-22ff12607b7d,PSV Watch Rate,May'26,0,0,0,0,0,0,0,0,0,0,0
-,6c1d5266-c66a-45f6-8c3e-7661442fa018,PSV Watch Rate,Jun'26,0,0,0,0,0,0,0,0,0,0,0
-,5a23bf15-96f8-4eea-b37f-cfcd2e3ceb9e,PSV Watch Rate,Jul'26,0,0,0,0,0,0,0,0,0,0,0
-,a31f7bfd-0f41-493c-9035-88bd60a9ad8a,PSV Watch Rate,Aug'26,0,0,0,0,0,0,0,0,0,0,0
-,5df387ed-51d0-44b2-9c33-a82ca740c00f,PSV Watch Rate,Sept'26,0,0,0,0,0,0,0,0,0,0,0
-,aa2ad452-3322-4de5-a36d-8707d571e7ff,PSV Watch Rate,Oct'26,0,0,0,0,0,0,0,0,0,0,0
-,2c082bb3-555f-4fcc-b33b-324a832e1292,PSV Watch Rate,Nov'26,0,0,0,0,0,0,0,0,0,0,0
-,2592af01-56b7-407b-9f84-7284b0680c5b,PSV Watch Rate,Dec'26,0,0,0,0,0,0,0,0,0,0,0
-,59551e32-944a-43f6-bfcf-1d99625e8ebb,Net Promoter Score – BMW Sales,Jan'26,0,0,0,0,0,0,0,0,0,0,0
-,94a296ed-8085-4a95-9e15-806a35e38287,Net Promoter Score – BMW Sales,Feb'26,0,0,0,0,0,0,0,0,0,0,0
-,0273bacc-e526-4d5c-8881-06bc932aad31,Net Promoter Score – BMW Sales,Mar'26,0,0,0,0,0,0,0,0,0,0,0
-,d23e360e-363b-443d-a849-a4f37e34b363,Net Promoter Score – BMW Sales,Apr'26,0,0,0,0,0,0,0,0,0,0,0
-,f2d012c6-aa58-4376-b47f-ff26022f3417,Net Promoter Score – BMW Sales,May'26,0,0,0,0,0,0,0,0,0,0,0
-,db7d014b-6d48-4459-9dd5-e1a5a41cd57f,Net Promoter Score – BMW Sales,Jun'26,0,0,0,0,0,0,0,0,0,0,0
-,c1d08417-dd77-4b83-9186-b8a76467313c,Net Promoter Score – BMW Sales,Jul'26,0,0,0,0,0,0,0,0,0,0,0
-,349897b1-56a7-43c4-859a-8075ca402299,Net Promoter Score – BMW Sales,Aug'26,0,0,0,0,0,0,0,0,0,0,0
-,9a9a77d4-67cb-4cd6-aab6-88bd6e77a31e,Net Promoter Score – BMW Sales,Sept'26,0,0,0,0,0,0,0,0,0,0,0
-,367ba422-b167-4c2c-b5c7-0d9727ff3939,Net Promoter Score – BMW Sales,Oct'26,0,0,0,0,0,0,0,0,0,0,0
-,29b5f250-99e9-4824-a8d9-b05ce1840792,Net Promoter Score – BMW Sales,Nov'26,0,0,0,0,0,0,0,0,0,0,0
-,d1b567e4-48b7-4788-a9ef-de0332de84d1,Net Promoter Score – BMW Sales,Dec'26,0,0,0,0,0,0,0,0,0,0,0
-,abea2024-8f57-45ec-85e8-f9ca8120bd4d,Net Promoter Score – BMW Service,Jan'26,0,0,0,0,0,0,0,0,0,0,0
-,bfa0f47f-362f-4ae5-ba42-d43a17be9393,Net Promoter Score – BMW Service,Feb'26,0,0,0,0,0,0,0,0,0,0,0
-,195b4880-fe0b-4d44-85d9-35fd75b28899,Net Promoter Score – BMW Service,Mar'26,0,0,0,0,0,0,0,0,0,0,0
-,8bc71e6f-758d-4b93-bd54-219bb37a3d4a,Net Promoter Score – BMW Service,Apr'26,0,0,0,0,0,0,0,0,0,0,0
-,e7da5ee7-b092-498c-871e-310f5ba2f771,Net Promoter Score – BMW Service,May'26,0,0,0,0,0,0,0,0,0,0,0
-,9fc281d6-c46d-487b-b515-f0389f057e18,Net Promoter Score – BMW Service,Jun'26,0,0,0,0,0,0,0,0,0,0,0
-,ea4d48c5-ae9a-4c30-9475-9c26b88bdf67,Net Promoter Score – BMW Service,Jul'26,0,0,0,0,0,0,0,0,0,0,0
-,739a7f45-40c3-4e48-9b36-f5e1b7307342,Net Promoter Score – BMW Service,Aug'26,0,0,0,0,0,0,0,0,0,0,0
-,0e3dc745-7790-4f35-b505-7771b7c98815,Net Promoter Score – BMW Service,Sept'26,0,0,0,0,0,0,0,0,0,0,0
-,1e7175a8-43c9-43cf-87f7-d79171ee241b,Net Promoter Score – BMW Service,Oct'26,0,0,0,0,0,0,0,0,0,0,0
-,e95f63f4-63ab-4f68-91f6-a328e1e64dec,Net Promoter Score – BMW Service,Nov'26,0,0,0,0,0,0,0,0,0,0,0
-,aad9eedb-8648-4110-b6ca-8a05c2bab7e4,Net Promoter Score – BMW Service,Dec'26,0,0,0,0,0,0,0,0,0,0,0
-,b42fd193-4fbe-453b-a468-9d0e9da2eceb,Customer Retention,Jan'26,0,0,0,0,0,0,0,0,0,0,0
-,d9f0ec7a-c76b-452f-ad84-7237843e22a7,Customer Retention,Feb'26,0,0,0,0,0,0,0,0,0,0,0
-,bc849820-6e21-44d9-a020-20ae1ec7d7ad,Customer Retention,Mar'26,0,0,0,0,0,0,0,0,0,0,0
-,aff2787a-ee6f-408f-9178-5dd971106db3,Customer Retention,Apr'26,0,0,0,0,0,0,0,0,0,0,0
-,15e6abc0-e712-45f1-82ac-60290e4a9348,Customer Retention,May'26,0,0,0,0,0,0,0,0,0,0,0
-,2b04d6ed-c6e2-4375-a1ee-6df242cda520,Customer Retention,Jun'26,0,0,0,0,0,0,0,0,0,0,0
-,f573f6ba-0591-4252-976a-75fe57617e61,Customer Retention,Jul'26,0,0,0,0,0,0,0,0,0,0,0
-,76aad9a9-d300-4162-a49c-b44ded1908d1,Customer Retention,Aug'26,0,0,0,0,0,0,0,0,0,0,0
-,7431dc8f-74c7-48b9-8fbd-4f503caa6549,Customer Retention,Sept'26,0,0,0,0,0,0,0,0,0,0,0
-,fe72981e-8840-446b-81ef-96c0f40896b5,Customer Retention,Oct'26,0,0,0,0,0,0,0,0,0,0,0
-,98c95f0f-5e73-4445-be85-6204e7e27fd8,Customer Retention,Nov'26,0,0,0,0,0,0,0,0,0,0,0
-,54ceb771-5d98-4145-bda4-644ed93c1612,Customer Retention,Dec'26,0,0,0,0,0,0,0,0,0,0,0
-,75bfc1af-05b5-4fc9-836d-7cd9be2c04af,Complaints per Throughput,Jan'26,0,0,0,0,0,0,0,0,0,0,0
-,1ed6941d-7981-4fd3-bc0c-0902adf03e3a,Complaints per Throughput,Feb'26,0,0,0,0,0,0,0,0,0,0,0
-,10f0de38-36a8-47f2-8de6-e87bb3a89df0,Complaints per Throughput,Mar'26,0,0,0,0,0,0,0,0,0,0,0
-,524ccdee-ecea-4ffd-94a3-cc85285fa456,Complaints per Throughput,Apr'26,0,0,0,0,0,0,0,0,0,0,0
-,789045fe-1095-4317-9a9d-dffc7e911c68,Complaints per Throughput,May'26,0,0,0,0,0,0,0,0,0,0,0
-,5286b000-3e35-4918-ab6d-1e789f716ea7,Complaints per Throughput,Jun'26,0,0,0,0,0,0,0,0,0,0,0
-,612ff510-7dbc-41a7-9221-16fc59e15e99,Complaints per Throughput,Jul'26,0,0,0,0,0,0,0,0,0,0,0
-,ccc8be03-fd28-4c38-b280-9585c98072bd,Complaints per Throughput,Aug'26,0,0,0,0,0,0,0,0,0,0,0
-,d0ed671a-5c98-41fb-9fd0-05124aa47f27,Complaints per Throughput,Sept'26,0,0,0,0,0,0,0,0,0,0,0
-,4350dfe0-0d9b-416b-99bf-a1030c8f539d,Complaints per Throughput,Oct'26,0,0,0,0,0,0,0,0,0,0,0
-,9884e271-35c9-47ea-84d1-45db9f7220d8,Complaints per Throughput,Nov'26,0,0,0,0,0,0,0,0,0,0,0
-,9b41fd97-8fde-457b-871a-3e166a4994ce,Complaints per Throughput,Dec'26,0,0,0,0,0,0,0,0,0,0,0
-,9ba78cc2-dd4b-4aff-b486-59afea9cfdff,SF Penetration Rate,Jan'26,0,0,0,0,0,0,0,0,0,0,0
-,4099cc70-233c-4a65-988d-e2145408fc54,SF Penetration Rate,Feb'26,0,0,0,0,0,0,0,0,0,0,0
-,070a1de6-8274-41e1-bc07-932e4ee5b2b2,SF Penetration Rate,Mar'26,0,0,0,0,0,0,0,0,0,0,0
-,9fc0e4ae-34a8-4a29-81a5-d6c08a6cad9e,SF Penetration Rate,Apr'26,0,0,0,0,0,0,0,0,0,0,0
-,98ebdbbf-b296-418b-a026-174daad3b028,SF Penetration Rate,May'26,0,0,0,0,0,0,0,0,0,0,0
-,5f8e739a-9b0f-4adb-8cda-5603b9f26443,SF Penetration Rate,Jun'26,0,0,0,0,0,0,0,0,0,0,0
-,eb520622-6bed-4b0f-9e45-2d7a15d8976f,SF Penetration Rate,Jul'26,0,0,0,0,0,0,0,0,0,0,0
-,100a537e-1b1c-4d3c-85d9-b4a26bf4ab70,SF Penetration Rate,Aug'26,0,0,0,0,0,0,0,0,0,0,0
-,8fab4848-44a1-46a2-9e22-27ff122006c3,SF Penetration Rate,Sept'26,0,0,0,0,0,0,0,0,0,0,0
-,e2a1f0e6-db3f-41e4-a62b-e72cf7667bdb,SF Penetration Rate,Oct'26,0,0,0,0,0,0,0,0,0,0,0
-,6dbbd025-5fc9-4b88-8d4f-b07e8bed06e0,SF Penetration Rate,Nov'26,0,0,0,0,0,0,0,0,0,0,0
-,8862d075-4ad6-4dd7-9948-9f13ba45d470,SF Penetration Rate,Dec'26,0,0,0,0,0,0,0,0,0,0,0
-,ecef55aa-92c2-47b2-9fe0-d533ce4fe2e1,BMW 360 Penetration,Jan'26,0,0,0,0,0,0,0,0,0,0,0
-,1042d111-c0da-48c7-9f85-155ae10964dc,BMW 360 Penetration,Feb'26,0,0,0,0,0,0,0,0,0,0,0
-,409c7645-0d3c-4c72-b149-62a6da6afc12,BMW 360 Penetration,Mar'26,0,0,0,0,0,0,0,0,0,0,0
-,17cc0c1c-8bb0-45d1-892c-d5cab6b55662,BMW 360 Penetration,Apr'26,0,0,0,0,0,0,0,0,0,0,0
-,62174f34-0848-4c38-91ec-e4b2bd8af779,BMW 360 Penetration,May'26,0,0,0,0,0,0,0,0,0,0,0
-,168790e5-3cd0-42c7-87af-52a449b188cb,BMW 360 Penetration,Jun'26,0,0,0,0,0,0,0,0,0,0,0
-,b19e9c3b-fe1f-46b7-97b9-be31b138caa0,BMW 360 Penetration,Jul'26,0,0,0,0,0,0,0,0,0,0,0
-,15356843-27da-4ac0-834f-ced09c6c4644,BMW 360 Penetration,Aug'26,0,0,0,0,0,0,0,0,0,0,0
-,0d633496-0887-43f8-9f55-e3f9972b81c1,BMW 360 Penetration,Sept'26,0,0,0,0,0,0,0,0,0,0,0
-,90d46e43-ddab-4db5-85fb-9b72f3b1bd55,BMW 360 Penetration,Oct'26,0,0,0,0,0,0,0,0,0,0,0
-,b11a88a7-eed7-4dcc-8b92-7c0f9e2be50c,BMW 360 Penetration,Nov'26,0,0,0,0,0,0,0,0,0,0,0
-,36697666-d7b4-455e-b051-12ace8542012,BMW 360 Penetration,Dec'26,0,0,0,0,0,0,0,0,0,0,0
-,c52c3fab-54a2-48b2-ba8a-8216ff38d847,Extended Warranty Penetration,Jan'26,0,0,0,0,0,0,0,0,0,0,0
-,a694a2e5-a1f1-4fba-ad5d-837b6bba2c09,Extended Warranty Penetration,Feb'26,0,0,0,0,0,0,0,0,0,0,0
-,b38e3ef8-df5a-4c34-84e1-cdd58cf4ad3d,Extended Warranty Penetration,Mar'26,0,0,0,0,0,0,0,0,0,0,0
-,f006dcb0-19ab-4e8e-9e8d-ddfa04382e2b,Extended Warranty Penetration,Apr'26,0,0,0,0,0,0,0,0,0,0,0
-,ebd805ba-89c9-4856-85e0-5705d4111177,Extended Warranty Penetration,May'26,0,0,0,0,0,0,0,0,0,0,0
-,e87b7112-354d-44ea-a52e-9f709f42488b,Extended Warranty Penetration,Jun'26,0,0,0,0,0,0,0,0,0,0,0
-,0f200ed3-659c-4443-ae6b-6e61db72e729,Extended Warranty Penetration,Jul'26,0,0,0,0,0,0,0,0,0,0,0
-,6a98aa75-df6d-400b-9a3b-053177da5d57,Extended Warranty Penetration,Aug'26,0,0,0,0,0,0,0,0,0,0,0
-,7dcba6f4-05fa-47ab-a670-90fe624f9972,Extended Warranty Penetration,Sept'26,0,0,0,0,0,0,0,0,0,0,0
-,f4b4501b-73f5-44ee-b4ce-31992193d242,Extended Warranty Penetration,Oct'26,0,0,0,0,0,0,0,0,0,0,0
-,352e7d34-72bb-4aa9-a952-0e5dd2035927,Extended Warranty Penetration,Nov'26,0,0,0,0,0,0,0,0,0,0,0
-,d436adb6-cae0-4852-aadf-547cc142da20,Extended Warranty Penetration,Dec'26,0,0,0,0,0,0,0,0,0,0,0
-,d4c08f02-0353-41d5-bfc0-03764815cecc,Insurance Penetration (New Car),Jan'26,0,0,0,0,0,0,0,0,0,0,0
-,c0c5533a-f240-4ffd-a63c-131ba509d91f,Insurance Penetration (New Car),Feb'26,0,0,0,0,0,0,0,0,0,0,0
-,58a8a152-fa61-407f-9df8-1c3a7cc23e41,Insurance Penetration (New Car),Mar'26,0,0,0,0,0,0,0,0,0,0,0
-,2570737f-3331-46df-90bd-3b9ee0a4ff2b,Insurance Penetration (New Car),Apr'26,0,0,0,0,0,0,0,0,0,0,0
-,c4d5d522-ebae-4806-aa67-14707ce13aa6,Insurance Penetration (New Car),May'26,0,0,0,0,0,0,0,0,0,0,0
-,d76572df-a74d-4222-bfe4-40f0966a6625,Insurance Penetration (New Car),Jun'26,0,0,0,0,0,0,0,0,0,0,0
-,0a6e4ba4-391f-499d-9571-d0b87ea39f3a,Insurance Penetration (New Car),Jul'26,0,0,0,0,0,0,0,0,0,0,0
-,ee274ec0-aadf-4e7e-9206-e81ab9089521,Insurance Penetration (New Car),Aug'26,0,0,0,0,0,0,0,0,0,0,0
-,d703eab2-59be-466e-b44b-4f0998fba7e4,Insurance Penetration (New Car),Sept'26,0,0,0,0,0,0,0,0,0,0,0
-,b12803d3-c3fd-4d5e-af6a-e2f7a4dd758a,Insurance Penetration (New Car),Oct'26,0,0,0,0,0,0,0,0,0,0,0
-,e11b84c9-1421-4378-9e12-4841d33d16e8,Insurance Penetration (New Car),Nov'26,0,0,0,0,0,0,0,0,0,0,0
-,e219e119-f629-4278-a5c9-782ad0fb083f,Insurance Penetration (New Car),Dec'26,0,0,0,0,0,0,0,0,0,0,0
-,e21d9b49-6755-4705-ab6a-653c1f8c693f,Loyalty Target Achievement,Jan'26,0,0,0,0,0,0,0,0,0,0,0
-,d216b9ba-c009-4d3d-b9ae-7b8c490077ce,Loyalty Target Achievement,Feb'26,0,0,0,0,0,0,0,0,0,0,0
-,e2aec8d6-5476-4201-90b0-79d51a99f28d,Loyalty Target Achievement,Mar'26,0,0,0,0,0,0,0,0,0,0,0
-,06965c6b-8ea8-4049-a35c-7588058bd54b,Loyalty Target Achievement,Apr'26,0,0,0,0,0,0,0,0,0,0,0
-,3cb0f2e0-ba5b-4b2e-9ab8-a5cc4686d92b,Loyalty Target Achievement,May'26,0,0,0,0,0,0,0,0,0,0,0
-,9bce283f-b313-403e-9fd8-f4810a62b0d6,Loyalty Target Achievement,Jun'26,0,0,0,0,0,0,0,0,0,0,0
-,8484acbf-c9db-4bf0-960f-fc4b8ad43aef,Loyalty Target Achievement,Jul'26,0,0,0,0,0,0,0,0,0,0,0
-,f94230d6-b786-47e6-acb5-cafdab5f64df,Loyalty Target Achievement,Aug'26,0,0,0,0,0,0,0,0,0,0,0
-,5d98b0dc-b98f-4654-9677-f07362d8fabd,Loyalty Target Achievement,Sept'26,0,0,0,0,0,0,0,0,0,0,0
-,d687d419-532d-43d8-bda0-a879a4e45904,Loyalty Target Achievement,Oct'26,0,0,0,0,0,0,0,0,0,0,0
-,7b77c2a4-2e7e-4585-8aba-e6af370b17a1,Loyalty Target Achievement,Nov'26,0,0,0,0,0,0,0,0,0,0,0
-,8cfb6a73-529d-4a03-bd98-f39fd15c8bdc,Loyalty Target Achievement,Dec'26,0,0,0,0,0,0,0,0,0,0,0
-,9e99f050-f0e9-4c56-b900-0fa7b8b49ed2,Net Promoter Score – MINI Sales,Jan'26,10,0,100,100,0,0,0,0,0,0,0
-,d2cb4857-4a4a-4760-95d0-cedf88e28de1,Net Promoter Score – MINI Sales,Feb'26,12,2,85.7142857142857,100,0.142857142857143,1.71428571428571,0,0,1,0,1
-,e0e5f4ab-bee2-414a-9ea1-fc9d8bfa7a4b,Net Promoter Score – MINI Sales,Mar'26,14,4,77.7777777777778,100,0.222222222222222,3.11111111111111,0,0,1,0,1
-,00d10a5d-a354-4b34-8954-ca6efcbabcf8,Net Promoter Score – MINI Sales,Apr'26,16,6,72.7272727272727,100,0.272727272727273,4.36363636363636,0,0,1,0,1
-,6251bf99-f003-448b-9004-8d3de1c34087,Net Promoter Score – MINI Sales,May'26,18,8,69.2307692307692,100,0.307692307692308,5.53846153846154,0,0,1,0,1
-,ebf67665-0235-451c-beef-0a211f4a271f,Net Promoter Score – MINI Sales,Jun'26,20,10,66.6666666666667,100,0.333333333333333,6.66666666666667,0,0,1,0,1
-,a992c2f4-9db9-4c9b-91dd-2bf72f2d9189,Net Promoter Score – MINI Sales,Jul'26,22,12,64.7058823529412,100,0.352941176470588,7.76470588235294,0,0,1,0,1
-,4c565638-81bb-478c-ae32-85292d1ec5bc,Net Promoter Score – MINI Sales,Aug'26,0,0,0,0,0,0,0,0,0,0,0
-,2978349c-1f20-48be-bafd-1400ce4c053e,Net Promoter Score – MINI Sales,Sept'26,0,0,0,0,0,0,0,0,0,0,0
-,e2a0448d-fa42-44a6-bfe3-2a4db0ef6c14,Net Promoter Score – MINI Sales,Oct'26,0,0,0,0,0,0,0,0,0,0,0
-,9ce5b87d-4f82-47cb-8e7d-1d915c1a274f,Net Promoter Score – MINI Sales,Nov'26,0,0,0,0,0,0,0,0,0,0,0
-,1b0bc2d0-fff4-4483-bc58-253de4412e7d,Net Promoter Score – MINI Sales,Dec'26,0,0,0,0,0,0,0,0,0,0,0
-,8238af36-5d3f-4d58-be78-ddec52e0434a,Net Promoter Score – MINI Service,Jan'26,0,0,0,0,0,0,0,0,0,0,0
-,86634a7c-5dbe-4479-a04d-e2664f052705,Net Promoter Score – MINI Service,Feb'26,0,0,0,0,0,0,0,0,0,0,0
-,a64b4d83-2f6c-4b94-9d61-d2091e71cdee,Net Promoter Score – MINI Service,Mar'26,0,0,0,0,0,0,0,0,0,0,0
-,aa42d93d-e58f-4d1a-9f8c-3d9af4533481,Net Promoter Score – MINI Service,Apr'26,0,0,0,0,0,0,0,0,0,0,0
-,d679156c-87fc-445a-b3ee-43e5ef6d07fd,Net Promoter Score – MINI Service,May'26,0,0,0,0,0,0,0,0,0,0,0
-,75d9d36b-fe72-42f7-9557-d854e5138495,Net Promoter Score – MINI Service,Jun'26,0,0,0,0,0,0,0,0,0,0,0
-,38623733-06d2-4967-b33b-c3cdd1c14195,Net Promoter Score – MINI Service,Jul'26,0,0,0,0,0,0,0,0,0,0,0
-,04df976a-a8ff-46ff-81b6-0e799fa09883,Net Promoter Score – MINI Service,Aug'26,0,0,0,0,0,0,0,0,0,0,0
-,4c15c99c-49c9-4c15-a86f-2851b766b8fd,Net Promoter Score – MINI Service,Sept'26,0,0,0,0,0,0,0,0,0,0,0
-,218abd86-ba76-405d-974e-da2abdaa52a0,Net Promoter Score – MINI Service,Oct'26,0,0,0,0,0,0,0,0,0,0,0
-,29b86bfb-fa37-475f-baeb-7d95463bf6fe,Net Promoter Score – MINI Service,Nov'26,0,0,0,0,0,0,0,0,0,0,0
-,6048830d-a3c0-4c1f-909d-f0ea2147d944,Net Promoter Score – MINI Service,Dec'26,0,0,0,0,0,0,0,0,0,0,0
-,5d9efd11-3e81-4530-af02-1f89ce5d7e92,Retail Target Achievement – MINI,Jan'26,36,35,102.857142857143,103,0.00142857142857153,0.0514285714285751,0,0,1,0,1
-,a6e47c85-7576-4817-9ca5-a20843dfdcb9,Retail Target Achievement – MINI,Feb'26,34,35,97.1428571428571,105,0.0785714285714286,2.67142857142857,1,0,1,0.0833333333333333,1.08333333333333
-,4aa404d6-6885-4af6-9144-99d49d833343,Retail Target Achievement – MINI,Mar'26,20,35,57.1428571428571,101,0.438571428571429,8.77142857142857,15,0,1,1.25,2.25
-,9227da52-9dff-4370-beae-f79f7c813e5a,Retail Target Achievement – MINI,Apr'26,30,35,85.7142857142857,45,0,0,5,-5,0,0.416666666666667,0.416666666666667
-,45d8fec4-19e5-48c6-9b66-ad3aebcb18df,Retail Target Achievement – MINI,May'26,38,35,108.571428571429,112,0.0342857142857143,1.30285714285714,0,0,1,0,1
-,170d5852-7578-4dba-8e0b-65e70b061139,Retail Target Achievement – MINI,Jun'26,0,0,0,0,0,0,0,0,0,0,0
-,88c61a27-8511-49e6-85df-8d707129aa34,Retail Target Achievement – MINI,Jul'26,0,0,0,0,0,0,0,0,0,0,0
-,f4ec1f44-fd3e-43c7-afcf-e43a532851ff,Retail Target Achievement – MINI,Aug'26,0,0,0,0,0,0,0,0,0,0,0
-,a391c09c-c93a-4ec9-96a7-c336da772ac4,Retail Target Achievement – MINI,Sept'26,0,0,0,0,0,0,0,0,0,0,0
-,7c2191ab-9603-4d8a-9996-c9d61993d481,Retail Target Achievement – MINI,Oct'26,0,0,0,0,0,0,0,0,0,0,0
-,0ea74e23-7903-4856-b5c8-8298e5626fa1,Retail Target Achievement – MINI,Nov'26,0,0,0,0,0,0,0,0,0,0,0
-,20f33d18-ff60-43af-bf9a-f2c9579365b2,Retail Target Achievement – MINI,Dec'26,0,0,0,0,0,0,0,0,0,0,0
-,f13f9e86-45a7-4f9b-b9eb-4c851143a359,Retail Growth YoY – MINI,Jan'26,0,0,0,0,0,0,0,0,0,0,0
-,b66ddfce-42f3-4493-b3e8-7c21f7982f98,Retail Growth YoY – MINI,Feb'26,0,0,0,0,0,0,0,0,0,0,0
-,864939dc-1053-4a55-872b-d1c9899f87b3,Retail Growth YoY – MINI,Mar'26,0,0,0,0,0,0,0,0,0,0,0
-,c2248cda-9d9b-4d75-b511-8b5615ef6f60,Retail Growth YoY – MINI,Apr'26,0,0,0,0,0,0,0,0,0,0,0
-,bad55ae3-b5dd-4044-9f13-718779cccc11,Retail Growth YoY – MINI,May'26,0,0,0,0,0,0,0,0,0,0,0
-,de609952-6013-4a70-8d76-a92286fe52d1,Retail Growth YoY – MINI,Jun'26,0,0,0,0,0,0,0,0,0,0,0
-,abd7121d-abf2-4822-9130-fbee83a61d65,Retail Growth YoY – MINI,Jul'26,0,0,0,0,0,0,0,0,0,0,0
-,e2d4200e-0195-4a3e-9ebf-347c9bcfb7b4,Retail Growth YoY – MINI,Aug'26,0,0,0,0,0,0,0,0,0,0,0
-,8a7a0c49-b888-4847-a32f-cfb6b765b8cd,Retail Growth YoY – MINI,Sept'26,0,0,0,0,0,0,0,0,0,0,0
-,2de17266-8afc-4256-9993-35aff1c21a88,Retail Growth YoY – MINI,Oct'26,0,0,0,0,0,0,0,0,0,0,0
-,aaf11a93-f160-40f4-9bf0-e07702c59ec0,Retail Growth YoY – MINI,Nov'26,0,0,0,0,0,0,0,0,0,0,0
-,640afdbb-8219-4a21-8974-487a5903f774,Retail Growth YoY – MINI,Dec'26,0,0,0,0,0,0,0,0,0,0,0
-,935088ed-8042-4a19-8cea-3a68680c523e,Enquiry Target Achievement,Jan'26,0,0,0,0,0,0,0,0,0,0,0
-,45fb8d79-8f08-4cd0-93fb-c61886d52ba8,Enquiry Target Achievement,Feb'26,0,0,0,0,0,0,0,0,0,0,0
-,c77e6cb2-081a-4a83-90ee-e36890fa1ede,Enquiry Target Achievement,Mar'26,0,0,0,0,0,0,0,0,0,0,0
-,df43275c-7040-4365-88c2-bb92ea0e0002,Enquiry Target Achievement,Apr'26,0,0,0,0,0,0,0,0,0,0,0
-,4241ced0-4ab3-43b1-bb2f-b45c5ca2a5f8,Enquiry Target Achievement,May'26,0,0,0,0,0,0,0,0,0,0,0
-,9dd5067f-8413-4085-bdd4-df0993d567b4,Enquiry Target Achievement,Jun'26,0,0,0,0,0,0,0,0,0,0,0
-,80309372-7340-44b9-afab-09d5d3c236ed,Enquiry Target Achievement,Jul'26,0,0,0,0,0,0,0,0,0,0,0
-,0e3f5915-0451-4164-a625-6b6731834d95,Enquiry Target Achievement,Aug'26,0,0,0,0,0,0,0,0,0,0,0
-,4a44a7f8-f323-41b9-83c7-fa4f1fcc52b6,Enquiry Target Achievement,Sept'26,0,0,0,0,0,0,0,0,0,0,0
-,e6abb9d2-8357-47c4-8394-474c36a8a67e,Enquiry Target Achievement,Oct'26,0,0,0,0,0,0,0,0,0,0,0
-,5f1e4f2e-1b52-4788-bbeb-e28d7d71336d,Enquiry Target Achievement,Nov'26,0,0,0,0,0,0,0,0,0,0,0
-,fa98d5df-424c-4529-8dd8-dca985432102,Enquiry Target Achievement,Dec'26,0,0,0,0,0,0,0,0,0,0,0
-,62ef8ccd-d28b-43fb-88ad-8f75a478a8f3,YoY Enquiry Growth,Jan'26,0,0,0,0,0,0,0,0,0,0,0
-,0f7705c0-4eb8-4d92-ac35-26b00d3f106f,YoY Enquiry Growth,Feb'26,0,0,0,0,0,0,0,0,0,0,0
-,fa28dff9-46e0-49ea-938a-39e5c55e58b5,YoY Enquiry Growth,Mar'26,0,0,0,0,0,0,0,0,0,0,0
-,ec0e8333-8a75-435d-bafd-04c111e91668,YoY Enquiry Growth,Apr'26,0,0,0,0,0,0,0,0,0,0,0
-,deb31fe5-facf-41fb-847c-17671d1a8d48,YoY Enquiry Growth,May'26,0,0,0,0,0,0,0,0,0,0,0
-,70e00d07-6f85-4dc5-95c6-e9643a03d631,YoY Enquiry Growth,Jun'26,0,0,0,0,0,0,0,0,0,0,0
-,b9636c41-2a3e-4454-b92f-5b8a2c260682,YoY Enquiry Growth,Jul'26,0,0,0,0,0,0,0,0,0,0,0
-,db7792e5-e0e4-458a-a3da-718694b8b26b,YoY Enquiry Growth,Aug'26,0,0,0,0,0,0,0,0,0,0,0
-,b674064b-65c0-491f-b17e-3de2a3095814,YoY Enquiry Growth,Sept'26,0,0,0,0,0,0,0,0,0,0,0
-,77b1e642-f537-44b5-8e7c-5c72929ace63,YoY Enquiry Growth,Oct'26,0,0,0,0,0,0,0,0,0,0,0
-,4ad4a3d8-6dcc-4a3d-acb9-51b220568799,YoY Enquiry Growth,Nov'26,0,0,0,0,0,0,0,0,0,0,0
-,acaa72f4-5393-43be-a1bb-976f48237c12,YoY Enquiry Growth,Dec'26,0,0,0,0,0,0,0,0,0,0,0
-,3fd52d62-b0c2-4fcb-8865-b7b39da99549,Test Drive Rate,Jan'26,0,0,0,0,0,0,0,0,0,0,0
-,3b4ee9fd-20ef-40cd-afbe-051b2bd9487e,Test Drive Rate,Feb'26,0,0,0,0,0,0,0,0,0,0,0
-,83f0bac8-114c-441f-a4c9-3948d7d632a9,Test Drive Rate,Mar'26,0,0,0,0,0,0,0,0,0,0,0
-,6ce85825-33e5-4b8f-a6f5-6c3700531622,Test Drive Rate,Apr'26,0,0,0,0,0,0,0,0,0,0,0
-,21b4dee9-6c5e-4441-9d45-af9eef37131c,Test Drive Rate,May'26,0,0,0,0,0,0,0,0,0,0,0
-,f0102e3b-27a6-4dd2-ab04-19615a743f1e,Test Drive Rate,Jun'26,0,0,0,0,0,0,0,0,0,0,0
-,028b87bb-ab34-4c0d-942c-a35fcdb73933,Test Drive Rate,Jul'26,0,0,0,0,0,0,0,0,0,0,0
-,75fce636-8463-41a7-9adf-2e0d1b969d47,Test Drive Rate,Aug'26,0,0,0,0,0,0,0,0,0,0,0
-,84fa9b31-9cfd-4e03-8b55-3b4d10e4712e,Test Drive Rate,Sept'26,0,0,0,0,0,0,0,0,0,0,0
-,067a9650-66ed-433f-8785-3a3d90f9f289,Test Drive Rate,Oct'26,0,0,0,0,0,0,0,0,0,0,0
-,7215aa67-6df5-481d-a581-c17b33deb5da,Test Drive Rate,Nov'26,0,0,0,0,0,0,0,0,0,0,0
-,14434136-a7d6-46fa-aac3-d262e487f2ca,Test Drive Rate,Dec'26,0,0,0,0,0,0,0,0,0,0,0
-,d571a29f-5e87-4bcb-9406-5b0776878b6d,Booking Rate,Jan'26,0,0,0,0,0,0,0,0,0,0,0
-,e9e438e4-31d7-4570-b929-08a29a094921,Booking Rate,Feb'26,0,0,0,0,0,0,0,0,0,0,0
-,aa2cfd44-de49-4554-8a90-312554beaa9e,Booking Rate,Mar'26,0,0,0,0,0,0,0,0,0,0,0
-,d2f0fa11-2678-4c62-a49f-3029a792d348,Booking Rate,Apr'26,0,0,0,0,0,0,0,0,0,0,0
-,646bd2f6-2315-458a-b740-d0b5feeaf283,Booking Rate,May'26,0,0,0,0,0,0,0,0,0,0,0
-,8f668785-ba34-43ad-bbe8-603153bc9e8a,Booking Rate,Jun'26,0,0,0,0,0,0,0,0,0,0,0
-,41181f6c-b933-43c1-bc92-72bed3f3f732,Booking Rate,Jul'26,0,0,0,0,0,0,0,0,0,0,0
-,47850309-2d59-4651-bb34-cfb5abb8c83b,Booking Rate,Aug'26,0,0,0,0,0,0,0,0,0,0,0
-,ac684c77-2fd3-42b6-81e5-e5e37a3ddf8a,Booking Rate,Sept'26,0,0,0,0,0,0,0,0,0,0,0
-,40e4616c-eb10-4a98-af9e-48342a8da4be,Booking Rate,Oct'26,0,0,0,0,0,0,0,0,0,0,0
-,b4f2c400-71a2-4511-a30d-32eec6a99be8,Booking Rate,Nov'26,0,0,0,0,0,0,0,0,0,0,0
-,4195914f-9ebd-4598-af66-084cfc1c0b20,Booking Rate,Dec'26,0,0,0,0,0,0,0,0,0,0,0
-,40daeb25-2bf2-41dd-b838-aadc6d1ec2a2,Walk-In Conversion,Jan'26,0,0,0,0,0,0,0,0,0,0,0
-,d0b19277-609e-4ca2-8e2c-77784d0af08e,Walk-In Conversion,Feb'26,0,0,0,0,0,0,0,0,0,0,0
-,1330fca4-415c-43aa-a419-a4e63d342186,Walk-In Conversion,Mar'26,0,0,0,0,0,0,0,0,0,0,0
-,ff97ffc7-cda0-4afd-8bf3-c165095d7ff0,Walk-In Conversion,Apr'26,0,0,0,0,0,0,0,0,0,0,0
-,fbb70e4d-3d33-48b6-8058-28da4d3c33a0,Walk-In Conversion,May'26,0,0,0,0,0,0,0,0,0,0,0
-,b845ff57-1d46-4b45-a14d-ff3f086a9d3f,Walk-In Conversion,Jun'26,0,0,0,0,0,0,0,0,0,0,0
-,d2d26740-9323-4f20-8382-bd83b82da50c,Walk-In Conversion,Jul'26,0,0,0,0,0,0,0,0,0,0,0
-,0e833769-344f-41aa-ad4e-26ccfee5b8db,Walk-In Conversion,Aug'26,0,0,0,0,0,0,0,0,0,0,0
-,59d1351c-89f1-4125-a1ae-096d92eae9a7,Walk-In Conversion,Sept'26,0,0,0,0,0,0,0,0,0,0,0
-,982153d8-4ef5-4360-8b35-b93626467778,Walk-In Conversion,Oct'26,0,0,0,0,0,0,0,0,0,0,0
-,d8c80ee6-2289-4d99-839c-234f44c0b7a7,Walk-In Conversion,Nov'26,0,0,0,0,0,0,0,0,0,0,0
-,d75308d5-edd2-4589-bb63-982dd0a78de8,Walk-In Conversion,Dec'26,0,0,0,0,0,0,0,0,0,0,0
-,9a3ee158-fbb6-44c0-aab5-5d3f2be698d8,BEC Adoption Rate,Jan'26,0,0,0,0,0,0,0,0,0,0,0
-,95929997-7ffe-46bf-bea5-5ee10ec963e8,BEC Adoption Rate,Feb'26,0,0,0,0,0,0,0,0,0,0,0
-,3e644e0c-2cd0-40ee-a572-e6a6a4877bc1,BEC Adoption Rate,Mar'26,0,0,0,0,0,0,0,0,0,0,0
-,c57792c7-ab5d-40b8-a715-54ec816a46ef,BEC Adoption Rate,Apr'26,0,0,0,0,0,0,0,0,0,0,0
-,b3d43dde-8ed7-4a63-8ded-97d39362cdd2,BEC Adoption Rate,May'26,0,0,0,0,0,0,0,0,0,0,0
-,9511b945-da0d-48ff-a396-b1d1ff74c413,BEC Adoption Rate,Jun'26,0,0,0,0,0,0,0,0,0,0,0
-,50583307-0f06-40e5-9194-472c6ef9a3f4,BEC Adoption Rate,Jul'26,0,0,0,0,0,0,0,0,0,0,0
-,da47bd86-0559-4473-b285-7b8e15cb2aad,BEC Adoption Rate,Aug'26,0,0,0,0,0,0,0,0,0,0,0
-,e1066766-0f46-427f-b2d6-f5a39d2ab063,BEC Adoption Rate,Sept'26,0,0,0,0,0,0,0,0,0,0,0
-,e5be88ea-7646-4be4-8b98-0a6000a231bc,BEC Adoption Rate,Oct'26,0,0,0,0,0,0,0,0,0,0,0
-,ed130c80-86eb-49c6-bb30-49fc354f91b3,BEC Adoption Rate,Nov'26,0,0,0,0,0,0,0,0,0,0,0
-,20329958-a17a-4007-9e51-96a9685ad15e,BEC Adoption Rate,Dec'26,0,0,0,0,0,0,0,0,0,0,0
+,9df9ee83-0ea4-4ad3-860b-0ab792252c24,Retail Target Achievement – BMW,Jan'26,100,100,100,120,0.2,20,0,0,1.66666666666667,0,1.66666666666667
+,050190b4-6b4d-4af5-b2b1-9beee0390222,Retail Target Achievement – BMW,Feb'26,95,100,95,115,0.2,19,5,0,1.58333333333333,0.416666666666667,2
+,431948e7-ca6b-4b09-a5c4-e5bdd44f19ae,Retail Target Achievement – BMW,Mar'26,120,100,120,118,0,0,0,20,0,0,0
+,74d1adce-51e6-4308-8e8e-b2367da967b1,Retail Target Achievement – BMW,Apr'26,121,100,121,119,0,0,0,21,0,0,0
+,dfb97038-608f-4a53-b82c-01de1c1c8c3e,Retail Target Achievement – BMW,May'26,85,100,85,120,0.35,29.75,15,0,2.47916666666667,1.25,3.72916666666667
+,0cef798a-9e42-48ae-8906-16ec5aeed16e,Retail Target Achievement – BMW,Jun'26,120,100,120,125,0.05,6,0,0,1,0,1
+,53b455c5-d441-4ae2-912e-b506f95e6697,Retail Target Achievement – BMW,Jul'26,130,100,130,110,0,0,0,30,0,0,0
+,16a81da4-13da-4b10-bb5e-ccff208682c3,Retail Target Achievement – BMW,Aug'26,0,0,0,0,0,0,0,0,0,0,0
+,e5660350-a8a3-489a-b915-27d5209fbd20,Retail Target Achievement – BMW,Sept'26,0,0,0,0,0,0,0,0,0,0,0
+,53f68202-7357-4b8d-9156-28cf9a09c7be,Retail Target Achievement – BMW,Oct'26,0,0,0,0,0,0,0,0,0,0,0
+,063b05bf-1f20-48f9-9aec-dd4feaa9fa24,Retail Target Achievement – BMW,Nov'26,0,0,0,0,0,0,0,0,0,0,0
+,5139f161-67b1-46b2-83e7-1a3c8802ce6e,Retail Target Achievement – BMW,Dec'26,0,0,0,0,0,0,0,0,0,0,0
+,48bb372a-0f6c-4feb-8c47-00277c3416d5,MB Index,Jan'26,0,0,0,0,0,0,0,0,0,0,0
+,55ddc7fc-d098-43cf-bbd1-59a88ce87619,MB Index,Feb'26,0,0,0,0,0,0,0,0,0,0,0
+,6e1492b3-f6de-4db0-8f05-1851776c6c3e,MB Index,Mar'26,0,0,0,0,0,0,0,0,0,0,0
+,d7e30739-8bfe-4bd1-9ae3-691480ab186a,MB Index,Apr'26,0,0,0,0,0,0,0,0,0,0,0
+,b228053b-ed31-4a12-8ca3-064b528d0ef5,MB Index,May'26,0,0,0,0,0,0,0,0,0,0,0
+,76a9b0cc-715e-43be-a0c8-66eaee682bd0,MB Index,Jun'26,0,0,0,0,0,0,0,0,0,0,0
+,73452ddf-023d-451f-afcf-9d902e77cb16,MB Index,Jul'26,0,0,0,0,0,0,0,0,0,0,0
+,042b8f36-64ab-4536-ac3b-e3259b2337f7,MB Index,Aug'26,0,0,0,0,0,0,0,0,0,0,0
+,58b96659-db07-4779-a48c-84bdb403f77a,MB Index,Sept'26,0,0,0,0,0,0,0,0,0,0,0
+,76a6062f-03ee-41ca-a615-2ab1c6fdafd2,MB Index,Oct'26,0,0,0,0,0,0,0,0,0,0,0
+,ee029f1f-f41a-49a3-9648-170beedef86f,MB Index,Nov'26,0,0,0,0,0,0,0,0,0,0,0
+,d8260eed-0173-484a-9b66-51079feb83be,MB Index,Dec'26,0,0,0,0,0,0,0,0,0,0,0
+,1d3ac341-7c61-4303-b4b2-1a83b1210160,MB Index (Non UKL),Jan'26,0,0,0,0,0,0,0,0,0,0,0
+,2306f02f-3406-49c6-9272-2fc39774c763,MB Index (Non UKL),Feb'26,0,0,0,0,0,0,0,0,0,0,0
+,f1ed4987-e68c-43c4-b511-9da92ef8beba,MB Index (Non UKL),Mar'26,0,0,0,0,0,0,0,0,0,0,0
+,d701aaec-1cb9-49d6-87a7-4ed4bf5b95f8,MB Index (Non UKL),Apr'26,0,0,0,0,0,0,0,0,0,0,0
+,5f14e094-5191-4d69-8f3c-80fa71733391,MB Index (Non UKL),May'26,0,0,0,0,0,0,0,0,0,0,0
+,261d6bb4-5a9f-414b-a1dd-769b9979c042,MB Index (Non UKL),Jun'26,0,0,0,0,0,0,0,0,0,0,0
+,33d4d111-c4cf-4b2c-9e2e-119073baa850,MB Index (Non UKL),Jul'26,0,0,0,0,0,0,0,0,0,0,0
+,cf31971d-62d2-40c2-bae9-3280687596c2,MB Index (Non UKL),Aug'26,0,0,0,0,0,0,0,0,0,0,0
+,68ee9696-9cd8-4b94-82ea-370c7f22a8c3,MB Index (Non UKL),Sept'26,0,0,0,0,0,0,0,0,0,0,0
+,3b295b76-caf6-4a20-97af-dd0363f8092e,MB Index (Non UKL),Oct'26,0,0,0,0,0,0,0,0,0,0,0
+,96bc5805-9612-485a-9652-bf96b2361044,MB Index (Non UKL),Nov'26,0,0,0,0,0,0,0,0,0,0,0
+,08e5ea99-f0a2-4ff3-b39c-4bf7e967b51f,MB Index (Non UKL),Dec'26,0,0,0,0,0,0,0,0,0,0,0
+,acaa1090-4312-4b74-8550-1003decae260,Corporate Sales Penetration,Jan'26,0,0,0,0,0,0,0,0,0,0,0
+,82b1ec56-a14f-4309-abe4-4666f2c28073,Corporate Sales Penetration,Feb'26,0,0,0,0,0,0,0,0,0,0,0
+,fb3e3c96-6c02-47b0-a6d2-a255cd3bbc97,Corporate Sales Penetration,Mar'26,0,0,0,0,0,0,0,0,0,0,0
+,50aae159-f763-4e16-a9c0-9144313c2671,Corporate Sales Penetration,Apr'26,0,0,0,0,0,0,0,0,0,0,0
+,a72811c0-5f25-4a98-9e1b-c29a2858c9c1,Corporate Sales Penetration,May'26,0,0,0,0,0,0,0,0,0,0,0
+,ffb0891d-86fa-4baa-818d-01dfad5e5fcf,Corporate Sales Penetration,Jun'26,0,0,0,0,0,0,0,0,0,0,0
+,d32b26de-47ab-4621-a039-97b9a3072437,Corporate Sales Penetration,Jul'26,0,0,0,0,0,0,0,0,0,0,0
+,943b0e2d-e2ff-464c-a29d-d5539bc9969a,Corporate Sales Penetration,Aug'26,0,0,0,0,0,0,0,0,0,0,0
+,74d70d4f-cd60-4389-b44d-df97fedb660e,Corporate Sales Penetration,Sept'26,0,0,0,0,0,0,0,0,0,0,0
+,b1b3e36b-dae5-43ff-9fee-d8e03361bf7d,Corporate Sales Penetration,Oct'26,0,0,0,0,0,0,0,0,0,0,0
+,be628288-c1ed-423a-b0ae-b204260c6288,Corporate Sales Penetration,Nov'26,0,0,0,0,0,0,0,0,0,0,0
+,ce3af21b-6105-4a7b-bdef-78c883193c69,Corporate Sales Penetration,Dec'26,0,0,0,0,0,0,0,0,0,0,0
+,35cd46ec-d66e-469c-a67b-34a3e857cbd3,BMW to BMW Trade-In,Jan'26,0,0,0,0,0,0,0,0,0,0,0
+,18700505-73a5-4d1e-bb41-a7d85f3426f7,BMW to BMW Trade-In,Feb'26,0,0,0,0,0,0,0,0,0,0,0
+,3c2a85e2-d50f-4e88-b7ee-4627403561cd,BMW to BMW Trade-In,Mar'26,0,0,0,0,0,0,0,0,0,0,0
+,a1cf1171-7b2d-4dc9-bb51-bbdf78883761,BMW to BMW Trade-In,Apr'26,0,0,0,0,0,0,0,0,0,0,0
+,0fc79186-8090-4472-8358-e9d7411e5826,BMW to BMW Trade-In,May'26,0,0,0,0,0,0,0,0,0,0,0
+,f0fc1178-838f-41fe-9b52-50c62c558908,BMW to BMW Trade-In,Jun'26,0,0,0,0,0,0,0,0,0,0,0
+,7472af79-155b-4c7b-a5f5-a0811c9f9e27,BMW to BMW Trade-In,Jul'26,0,0,0,0,0,0,0,0,0,0,0
+,ddaab3d8-80aa-45df-a261-d1cae6e122ba,BMW to BMW Trade-In,Aug'26,0,0,0,0,0,0,0,0,0,0,0
+,d2384fb4-6b08-43b8-b55c-b4e6f0a853b7,BMW to BMW Trade-In,Sept'26,0,0,0,0,0,0,0,0,0,0,0
+,a557ebca-6559-4a75-916b-c3ee6835a116,BMW to BMW Trade-In,Oct'26,0,0,0,0,0,0,0,0,0,0,0
+,7384ae7e-383a-463c-ba28-7ab8bdd610d1,BMW to BMW Trade-In,Nov'26,0,0,0,0,0,0,0,0,0,0,0
+,23d086a1-fbde-4e89-a5cd-a58bf7166aff,BMW to BMW Trade-In,Dec'26,0,0,0,0,0,0,0,0,0,0,0
+,aa707721-c870-4345-9495-c4e127c06edf,BPS Retail to New Car Ratio,Jan'26,0,0,0,0,0,0,0,0,0,0,0
+,ab0d46d3-3da4-4690-aa9c-84dbf93bbad8,BPS Retail to New Car Ratio,Feb'26,0,0,0,0,0,0,0,0,0,0,0
+,19363793-da94-4754-8e14-78dca97d35ad,BPS Retail to New Car Ratio,Mar'26,0,0,0,0,0,0,0,0,0,0,0
+,013cfb91-dfc6-4e56-a50c-b16f85a173f6,BPS Retail to New Car Ratio,Apr'26,0,0,0,0,0,0,0,0,0,0,0
+,f71e60c7-8d89-475f-bde5-7ef1deb45cf3,BPS Retail to New Car Ratio,May'26,0,0,0,0,0,0,0,0,0,0,0
+,bfe832f8-277b-4f5d-b50d-5034d6784d01,BPS Retail to New Car Ratio,Jun'26,0,0,0,0,0,0,0,0,0,0,0
+,b67de923-9138-4c0d-8723-b8e74090df25,BPS Retail to New Car Ratio,Jul'26,0,0,0,0,0,0,0,0,0,0,0
+,46b323fa-ace3-450b-bf30-5c0a660255e3,BPS Retail to New Car Ratio,Aug'26,0,0,0,0,0,0,0,0,0,0,0
+,0826a47c-3ba3-40d1-b901-c09e50d0990b,BPS Retail to New Car Ratio,Sept'26,0,0,0,0,0,0,0,0,0,0,0
+,c2ab0aed-80c0-42c3-a2e8-507f441f3c3f,BPS Retail to New Car Ratio,Oct'26,0,0,0,0,0,0,0,0,0,0,0
+,ef241429-fbb8-4dc2-96fd-f1123bb5a3c5,BPS Retail to New Car Ratio,Nov'26,0,0,0,0,0,0,0,0,0,0,0
+,082c07f2-5bc5-4cfa-a095-090abb6211ed,BPS Retail to New Car Ratio,Dec'26,0,0,0,0,0,0,0,0,0,0,0
+,be94dc76-46e3-41dc-b0fc-90b2b28bcc37,Customer Pay,Jan'26,0,0,0,0,0,0,0,0,0,0,0
+,aa8ced04-8ca0-4bff-8ccd-842ed1a32c76,Customer Pay,Feb'26,0,0,0,0,0,0,0,0,0,0,0
+,fa873bed-f78e-4d31-a712-aff3bc13daa4,Customer Pay,Mar'26,0,0,0,0,0,0,0,0,0,0,0
+,e04c3d6f-cfa0-4f7e-b454-203526c95f97,Customer Pay,Apr'26,0,0,0,0,0,0,0,0,0,0,0
+,d0501625-eeee-42ff-8687-a7658ae63d2e,Customer Pay,May'26,0,0,0,0,0,0,0,0,0,0,0
+,d9861c32-0a1f-4754-a375-d3761a5ced59,Customer Pay,Jun'26,0,0,0,0,0,0,0,0,0,0,0
+,f3e3b845-f376-446e-ab6c-07a1d0dba3f3,Customer Pay,Jul'26,0,0,0,0,0,0,0,0,0,0,0
+,55a97e77-0366-475b-8431-2b861dabcf66,Customer Pay,Aug'26,0,0,0,0,0,0,0,0,0,0,0
+,5a819f36-77c3-4636-879a-5a84982c8715,Customer Pay,Sept'26,0,0,0,0,0,0,0,0,0,0,0
+,b04e7ddc-ee22-4540-8ef1-0dc21fb9a22a,Customer Pay,Oct'26,0,0,0,0,0,0,0,0,0,0,0
+,7d13d9b8-544f-4d4c-aaec-0a6035aada5b,Customer Pay,Nov'26,0,0,0,0,0,0,0,0,0,0,0
+,4d0ae01e-afb5-4f2e-8330-9d980599b2ec,Customer Pay,Dec'26,0,0,0,0,0,0,0,0,0,0,0
+,e9a3fa9f-eb5e-4ff1-b839-3f2efe4985e1,"Parts (PC 5,8,9) Value per Throughput",Jan'26,0,0,0,0,0,0,0,0,0,0,0
+,9eb18101-f170-467e-a16c-08950488543f,"Parts (PC 5,8,9) Value per Throughput",Feb'26,0,0,0,0,0,0,0,0,0,0,0
+,c684a189-acf9-464c-ba71-66c50682bf88,"Parts (PC 5,8,9) Value per Throughput",Mar'26,0,0,0,0,0,0,0,0,0,0,0
+,245d3f8b-73e0-49e0-9436-a54cf9371916,"Parts (PC 5,8,9) Value per Throughput",Apr'26,0,0,0,0,0,0,0,0,0,0,0
+,9219a039-23ca-446f-b1be-4f7b4cf0a134,"Parts (PC 5,8,9) Value per Throughput",May'26,0,0,0,0,0,0,0,0,0,0,0
+,2406d641-d77c-4d95-b57a-8d4191a997c7,"Parts (PC 5,8,9) Value per Throughput",Jun'26,0,0,0,0,0,0,0,0,0,0,0
+,43d63412-804c-4c7a-afff-2675b7f3a107,"Parts (PC 5,8,9) Value per Throughput",Jul'26,0,0,0,0,0,0,0,0,0,0,0
+,68bc26cb-a591-4124-bde8-3adc42d9b874,"Parts (PC 5,8,9) Value per Throughput",Aug'26,0,0,0,0,0,0,0,0,0,0,0
+,6e636d6f-e26f-4408-99ec-ead4d6623548,"Parts (PC 5,8,9) Value per Throughput",Sept'26,0,0,0,0,0,0,0,0,0,0,0
+,faeb1173-51d7-4932-b6a2-07c15b4af453,"Parts (PC 5,8,9) Value per Throughput",Oct'26,0,0,0,0,0,0,0,0,0,0,0
+,7468eb9e-d307-4a42-b8e8-552433d33e1e,"Parts (PC 5,8,9) Value per Throughput",Nov'26,0,0,0,0,0,0,0,0,0,0,0
+,fdba3f72-c4d7-4664-9a8b-c72ace5f53c2,"Parts (PC 5,8,9) Value per Throughput",Dec'26,0,0,0,0,0,0,0,0,0,0,0
+,c3309b4a-2894-4cae-8fd4-f650d96283b1,Accessories (PC 3&7) Value per New Car,Jan'26,0,0,0,0,0,0,0,0,0,0,0
+,fccbf1b3-5f26-4073-84ec-86e8f7978f5a,Accessories (PC 3&7) Value per New Car,Feb'26,0,0,0,0,0,0,0,0,0,0,0
+,496ae9ea-ba61-41ea-b018-d4af060e5901,Accessories (PC 3&7) Value per New Car,Mar'26,0,0,0,0,0,0,0,0,0,0,0
+,bacd925b-8339-4ad3-bb6f-090c262e8dbb,Accessories (PC 3&7) Value per New Car,Apr'26,0,0,0,0,0,0,0,0,0,0,0
+,ba376354-2090-4920-bdfe-751860021dee,Accessories (PC 3&7) Value per New Car,May'26,0,0,0,0,0,0,0,0,0,0,0
+,be5e0678-f9e6-4286-b855-c1bfe217f08c,Accessories (PC 3&7) Value per New Car,Jun'26,0,0,0,0,0,0,0,0,0,0,0
+,3fdc9608-52e7-4494-8854-88aecdf6b166,Accessories (PC 3&7) Value per New Car,Jul'26,0,0,0,0,0,0,0,0,0,0,0
+,e9d40d7d-0641-4b16-9c5b-03fa0b62c409,Accessories (PC 3&7) Value per New Car,Aug'26,0,0,0,0,0,0,0,0,0,0,0
+,70c5efee-4d09-481e-b39c-27a07ab80451,Accessories (PC 3&7) Value per New Car,Sept'26,0,0,0,0,0,0,0,0,0,0,0
+,87b40178-ce5a-4ca2-805f-134baa88b2c8,Accessories (PC 3&7) Value per New Car,Oct'26,0,0,0,0,0,0,0,0,0,0,0
+,84e72a34-4d5a-4f09-91d7-6d8e2baaedb8,Accessories (PC 3&7) Value per New Car,Nov'26,0,0,0,0,0,0,0,0,0,0,0
+,b412e1b5-9834-449a-87af-12c797b6e462,Accessories (PC 3&7) Value per New Car,Dec'26,0,0,0,0,0,0,0,0,0,0,0
+,12281985-71d3-4d97-88a5-8f09b6e569df,PSV Watch Rate,Jan'26,0,0,0,0,0,0,0,0,0,0,0
+,f917aa6e-908a-4b8a-9d32-d4b7983cd6c3,PSV Watch Rate,Feb'26,0,0,0,0,0,0,0,0,0,0,0
+,a5e5fafc-11e7-4c37-8647-e2c2606b7fca,PSV Watch Rate,Mar'26,0,0,0,0,0,0,0,0,0,0,0
+,9caac3cc-d246-4deb-886f-9ab3e86a3bce,PSV Watch Rate,Apr'26,0,0,0,0,0,0,0,0,0,0,0
+,71826e83-8212-48d3-bc90-1974c2572eb8,PSV Watch Rate,May'26,0,0,0,0,0,0,0,0,0,0,0
+,9cf7e4b4-6107-4e34-bbbb-4d7c116cd060,PSV Watch Rate,Jun'26,0,0,0,0,0,0,0,0,0,0,0
+,820c1358-cdb6-4163-9743-cdf0ff61ddae,PSV Watch Rate,Jul'26,0,0,0,0,0,0,0,0,0,0,0
+,55426573-92ca-421b-8a2f-a53915f764f4,PSV Watch Rate,Aug'26,0,0,0,0,0,0,0,0,0,0,0
+,8296fe98-fa0c-4168-b750-99a609ae2afd,PSV Watch Rate,Sept'26,0,0,0,0,0,0,0,0,0,0,0
+,5882242f-6206-4b0d-8953-2a8547e80122,PSV Watch Rate,Oct'26,0,0,0,0,0,0,0,0,0,0,0
+,197dd0a7-09f3-4a40-b3de-9ca08445386a,PSV Watch Rate,Nov'26,0,0,0,0,0,0,0,0,0,0,0
+,be92cb0a-480e-4b32-ad85-f480b35033bb,PSV Watch Rate,Dec'26,0,0,0,0,0,0,0,0,0,0,0
+,314f3a8f-9556-42a2-85f2-03d38fb3ed86,Net Promoter Score – BMW Sales,Jan'26,0,0,0,0,0,0,0,0,0,0,0
+,36278f07-8c44-46ed-9608-52565fef0d2c,Net Promoter Score – BMW Sales,Feb'26,0,0,0,0,0,0,0,0,0,0,0
+,e128c833-d774-48f5-ac7f-798ed6e20e71,Net Promoter Score – BMW Sales,Mar'26,0,0,0,0,0,0,0,0,0,0,0
+,749892a1-5caf-4b17-ba37-facd5895da82,Net Promoter Score – BMW Sales,Apr'26,0,0,0,0,0,0,0,0,0,0,0
+,514c5684-6636-4886-a926-64a20c49f232,Net Promoter Score – BMW Sales,May'26,0,0,0,0,0,0,0,0,0,0,0
+,666f371b-1372-4e48-88d7-11479e0ccede,Net Promoter Score – BMW Sales,Jun'26,0,0,0,0,0,0,0,0,0,0,0
+,4d90f06c-88c9-4e54-ab20-3f31ea28a317,Net Promoter Score – BMW Sales,Jul'26,0,0,0,0,0,0,0,0,0,0,0
+,b33c6ed3-fccb-49a9-ac7e-acb88752a4e6,Net Promoter Score – BMW Sales,Aug'26,0,0,0,0,0,0,0,0,0,0,0
+,17d500a2-21e9-40f0-b826-3cf3ab5e056e,Net Promoter Score – BMW Sales,Sept'26,0,0,0,0,0,0,0,0,0,0,0
+,28018d61-da07-46f4-b232-dc90dfbd9087,Net Promoter Score – BMW Sales,Oct'26,0,0,0,0,0,0,0,0,0,0,0
+,18c7c2cb-9660-45f7-b571-a5c28a26f476,Net Promoter Score – BMW Sales,Nov'26,0,0,0,0,0,0,0,0,0,0,0
+,0abaff85-fbe9-44fa-944d-a400ce20020a,Net Promoter Score – BMW Sales,Dec'26,0,0,0,0,0,0,0,0,0,0,0
+,d17d2252-727b-410b-9a07-4110aebd43d2,Net Promoter Score – BMW Service,Jan'26,0,0,0,0,0,0,0,0,0,0,0
+,4a134d83-16de-4176-a4b0-16ab702d18f8,Net Promoter Score – BMW Service,Feb'26,0,0,0,0,0,0,0,0,0,0,0
+,ebb74a04-a5a7-495f-99df-bbdcca70822d,Net Promoter Score – BMW Service,Mar'26,0,0,0,0,0,0,0,0,0,0,0
+,1bdb783c-5cbd-4941-a065-d6e0c44823c7,Net Promoter Score – BMW Service,Apr'26,0,0,0,0,0,0,0,0,0,0,0
+,4410a163-f26a-48e0-a555-35af17e13d73,Net Promoter Score – BMW Service,May'26,0,0,0,0,0,0,0,0,0,0,0
+,bebdec86-3b4e-4e48-bc24-d0fe586af697,Net Promoter Score – BMW Service,Jun'26,0,0,0,0,0,0,0,0,0,0,0
+,8803ac3a-a6e7-486d-9e0d-237ac876ae67,Net Promoter Score – BMW Service,Jul'26,0,0,0,0,0,0,0,0,0,0,0
+,bd497a54-6662-4dc4-8875-462fb0535ca8,Net Promoter Score – BMW Service,Aug'26,0,0,0,0,0,0,0,0,0,0,0
+,8b9230e8-9a80-4862-a350-840a76617fef,Net Promoter Score – BMW Service,Sept'26,0,0,0,0,0,0,0,0,0,0,0
+,2efd8413-9b3a-4ebc-8af5-79f563ac1bbd,Net Promoter Score – BMW Service,Oct'26,0,0,0,0,0,0,0,0,0,0,0
+,d5f4c96a-a6ab-403f-bbb4-fdd973e92305,Net Promoter Score – BMW Service,Nov'26,0,0,0,0,0,0,0,0,0,0,0
+,b2bca4d8-b1ca-40bd-b956-a185ebd11059,Net Promoter Score – BMW Service,Dec'26,0,0,0,0,0,0,0,0,0,0,0
+,c7387f89-3dfd-437e-9219-25f1c82943a3,Customer Retention,Jan'26,0,0,0,0,0,0,0,0,0,0,0
+,e2722671-3a23-4195-bd3c-dfa3072fa447,Customer Retention,Feb'26,0,0,0,0,0,0,0,0,0,0,0
+,dee522d3-bd04-4235-a0cc-4f3a280b0ea6,Customer Retention,Mar'26,0,0,0,0,0,0,0,0,0,0,0
+,ab4a640b-77f3-45df-a7bc-3e12d827a678,Customer Retention,Apr'26,0,0,0,0,0,0,0,0,0,0,0
+,92182e8e-8478-4044-a507-cf5b6b652ea5,Customer Retention,May'26,0,0,0,0,0,0,0,0,0,0,0
+,9ec71da7-95ea-4ec3-b680-55a47f7134cb,Customer Retention,Jun'26,0,0,0,0,0,0,0,0,0,0,0
+,da897e23-e412-46fa-b340-0ac6db211852,Customer Retention,Jul'26,0,0,0,0,0,0,0,0,0,0,0
+,cef2322d-e451-4043-b1c5-d8b7f88e3888,Customer Retention,Aug'26,0,0,0,0,0,0,0,0,0,0,0
+,9c4ea19e-e9f0-41de-80d7-38d6bdab0a91,Customer Retention,Sept'26,0,0,0,0,0,0,0,0,0,0,0
+,8983dd60-f31c-414b-a348-e19a432ce85a,Customer Retention,Oct'26,0,0,0,0,0,0,0,0,0,0,0
+,19703b2c-ccc0-480e-8698-9cc0c8e27b56,Customer Retention,Nov'26,0,0,0,0,0,0,0,0,0,0,0
+,12e04620-1863-4d84-894e-2050cbd32874,Customer Retention,Dec'26,0,0,0,0,0,0,0,0,0,0,0
+,67238ffb-fe6a-45b9-8927-d94e7b0dd064,Complaints per Throughput,Jan'26,0,0,0,0,0,0,0,0,0,0,0
+,5346b958-8ed9-4e25-a8e9-360f550293b7,Complaints per Throughput,Feb'26,0,0,0,0,0,0,0,0,0,0,0
+,9554720e-4bfc-4d5b-a4a3-98bc628a72fd,Complaints per Throughput,Mar'26,0,0,0,0,0,0,0,0,0,0,0
+,98fdcd0c-8f9a-4424-b57d-f8f8607cb2e3,Complaints per Throughput,Apr'26,0,0,0,0,0,0,0,0,0,0,0
+,2fd90aef-99b6-4d6c-864f-d0e5e5e5d4b8,Complaints per Throughput,May'26,0,0,0,0,0,0,0,0,0,0,0
+,bc18bce8-0e43-4fae-8a59-b98197f6268a,Complaints per Throughput,Jun'26,0,0,0,0,0,0,0,0,0,0,0
+,1ddd82f5-ca09-4647-ab2f-b82b4f2e732c,Complaints per Throughput,Jul'26,0,0,0,0,0,0,0,0,0,0,0
+,c90779bd-234b-4f31-af43-7b2e673e2161,Complaints per Throughput,Aug'26,0,0,0,0,0,0,0,0,0,0,0
+,7b33884f-4dbd-4162-a9af-7b1502c985f9,Complaints per Throughput,Sept'26,0,0,0,0,0,0,0,0,0,0,0
+,bb968694-1a2c-49e4-8c73-356ae5585c70,Complaints per Throughput,Oct'26,0,0,0,0,0,0,0,0,0,0,0
+,5c6fce8a-d3e3-41fd-b8c2-a61c22a34369,Complaints per Throughput,Nov'26,0,0,0,0,0,0,0,0,0,0,0
+,9eeaa3fc-f705-4dc3-b322-3df129c069a2,Complaints per Throughput,Dec'26,0,0,0,0,0,0,0,0,0,0,0
+,3aa58b6a-69ae-4d02-9cbe-9e8f9d3884bc,SF Penetration Rate,Jan'26,0,0,0,0,0,0,0,0,0,0,0
+,f16d9883-b012-4934-b49b-b0ee22b590fd,SF Penetration Rate,Feb'26,0,0,0,0,0,0,0,0,0,0,0
+,fb58ddea-a48a-4bcd-add4-87e0aeabd6ab,SF Penetration Rate,Mar'26,0,0,0,0,0,0,0,0,0,0,0
+,2e55e710-6b10-4142-8548-f80246464a16,SF Penetration Rate,Apr'26,0,0,0,0,0,0,0,0,0,0,0
+,c14c09ee-7024-4e5e-a916-b4e5ca064fb6,SF Penetration Rate,May'26,0,0,0,0,0,0,0,0,0,0,0
+,4a8a9872-0fa6-4080-9de7-a0aea90fc6a8,SF Penetration Rate,Jun'26,0,0,0,0,0,0,0,0,0,0,0
+,f8937f5a-04c7-4f96-a650-c88c81358115,SF Penetration Rate,Jul'26,0,0,0,0,0,0,0,0,0,0,0
+,d56d1db5-1a67-4e44-975e-3c1259119c04,SF Penetration Rate,Aug'26,0,0,0,0,0,0,0,0,0,0,0
+,2b7496f0-19ed-4598-8ac5-206212166f78,SF Penetration Rate,Sept'26,0,0,0,0,0,0,0,0,0,0,0
+,cae498d7-7281-415b-b328-109079a46ec9,SF Penetration Rate,Oct'26,0,0,0,0,0,0,0,0,0,0,0
+,b5ed51a1-1e33-4cd6-b1ea-22de2dd5d2bf,SF Penetration Rate,Nov'26,0,0,0,0,0,0,0,0,0,0,0
+,137048a2-c5fa-4942-86f7-879016530845,SF Penetration Rate,Dec'26,0,0,0,0,0,0,0,0,0,0,0
+,da58d581-1f9a-4c0e-b2bd-fe6c60047294,BMW 360 Penetration,Jan'26,0,0,0,0,0,0,0,0,0,0,0
+,feefa0a1-be88-4783-839f-908e9d2cbea1,BMW 360 Penetration,Feb'26,0,0,0,0,0,0,0,0,0,0,0
+,7ff8884e-e6e2-48a0-a262-67c8eee98f72,BMW 360 Penetration,Mar'26,0,0,0,0,0,0,0,0,0,0,0
+,2311da5c-a731-4324-8697-87a543ec040e,BMW 360 Penetration,Apr'26,0,0,0,0,0,0,0,0,0,0,0
+,e0dfb52f-012f-466b-91c2-346a62fa1598,BMW 360 Penetration,May'26,0,0,0,0,0,0,0,0,0,0,0
+,9f5faec4-50fa-4462-85a5-20abd510e53e,BMW 360 Penetration,Jun'26,0,0,0,0,0,0,0,0,0,0,0
+,91a83e8a-2d4a-4c75-9792-1c9fc1c43876,BMW 360 Penetration,Jul'26,0,0,0,0,0,0,0,0,0,0,0
+,791ba896-93de-4457-95cf-1fff394bc996,BMW 360 Penetration,Aug'26,0,0,0,0,0,0,0,0,0,0,0
+,1b398dd0-00f8-45fa-83ce-1cdee5ab764f,BMW 360 Penetration,Sept'26,0,0,0,0,0,0,0,0,0,0,0
+,9e8c5518-9e33-4674-a129-bbd703549fc9,BMW 360 Penetration,Oct'26,0,0,0,0,0,0,0,0,0,0,0
+,f0fd2ad6-79c0-4ff5-aa34-df7d0ededb5c,BMW 360 Penetration,Nov'26,0,0,0,0,0,0,0,0,0,0,0
+,f6406d3f-eb18-4e64-b0a0-eebdaf1a7cbe,BMW 360 Penetration,Dec'26,0,0,0,0,0,0,0,0,0,0,0
+,3c5ea4e0-ad98-4a3d-8ed8-23b4a03c2855,Extended Warranty Penetration,Jan'26,0,0,0,0,0,0,0,0,0,0,0
+,4235b387-c693-46fe-ac97-d1b18ba63689,Extended Warranty Penetration,Feb'26,0,0,0,0,0,0,0,0,0,0,0
+,c0b6281b-8c5f-4e7b-9355-137031868f94,Extended Warranty Penetration,Mar'26,0,0,0,0,0,0,0,0,0,0,0
+,397fcc02-4e56-40c7-b7ff-960e141fe7c2,Extended Warranty Penetration,Apr'26,0,0,0,0,0,0,0,0,0,0,0
+,cc2ef300-b1cc-49f1-8c0b-0563a426ebe8,Extended Warranty Penetration,May'26,0,0,0,0,0,0,0,0,0,0,0
+,c28e4a3e-5217-4485-b9ab-c52216f47a21,Extended Warranty Penetration,Jun'26,0,0,0,0,0,0,0,0,0,0,0
+,56503e1a-3678-4ce5-83e7-4b0129492a08,Extended Warranty Penetration,Jul'26,0,0,0,0,0,0,0,0,0,0,0
+,66cbadd3-be88-4517-82d5-eb672829dafc,Extended Warranty Penetration,Aug'26,0,0,0,0,0,0,0,0,0,0,0
+,a7ce5305-e647-4b58-815f-05df7937976a,Extended Warranty Penetration,Sept'26,0,0,0,0,0,0,0,0,0,0,0
+,57cb3fbe-5b31-41d7-b552-00fc3dff224d,Extended Warranty Penetration,Oct'26,0,0,0,0,0,0,0,0,0,0,0
+,1b1e61d3-b18e-476d-9ca5-d5394c38b19c,Extended Warranty Penetration,Nov'26,0,0,0,0,0,0,0,0,0,0,0
+,1bafacbf-f17f-40dc-a537-032b681d3a06,Extended Warranty Penetration,Dec'26,0,0,0,0,0,0,0,0,0,0,0
+,e2089ded-ad6a-402e-a9eb-4eadbd64bcec,Insurance Penetration (New Car),Jan'26,0,0,0,0,0,0,0,0,0,0,0
+,fcc4bbf7-a08a-4c77-b403-68b099effdcc,Insurance Penetration (New Car),Feb'26,0,0,0,0,0,0,0,0,0,0,0
+,47dd4dcf-6060-4bc0-bd90-ed45c7df9528,Insurance Penetration (New Car),Mar'26,0,0,0,0,0,0,0,0,0,0,0
+,17b41008-be3c-4ebf-bafc-b544794b99e7,Insurance Penetration (New Car),Apr'26,0,0,0,0,0,0,0,0,0,0,0
+,96646240-613a-4d4b-a1ef-8330466b94a5,Insurance Penetration (New Car),May'26,0,0,0,0,0,0,0,0,0,0,0
+,97cfbc67-5e49-492a-a42b-afc8394e5c0f,Insurance Penetration (New Car),Jun'26,0,0,0,0,0,0,0,0,0,0,0
+,82151b59-8c00-46c6-aec8-676723fbdf71,Insurance Penetration (New Car),Jul'26,0,0,0,0,0,0,0,0,0,0,0
+,92b98ef6-277e-4592-8998-51f4e13f1ab8,Insurance Penetration (New Car),Aug'26,0,0,0,0,0,0,0,0,0,0,0
+,6f9f52e0-8dbc-41c9-b4fe-0f8afafb5001,Insurance Penetration (New Car),Sept'26,0,0,0,0,0,0,0,0,0,0,0
+,064ea716-38ca-4267-b72d-a24941e3a367,Insurance Penetration (New Car),Oct'26,0,0,0,0,0,0,0,0,0,0,0
+,6dec5e0e-102b-4dad-a0f4-8f25ba7ccb5b,Insurance Penetration (New Car),Nov'26,0,0,0,0,0,0,0,0,0,0,0
+,ae573cba-0e83-41e9-93c6-c8e0023ec8f2,Insurance Penetration (New Car),Dec'26,0,0,0,0,0,0,0,0,0,0,0
+,f517af19-2f8a-43df-a46e-2c32d8f3a2d3,Loyalty Target Achievement,Jan'26,0,0,0,0,0,0,0,0,0,0,0
+,07083503-6ddf-4196-871d-1a9e6695f148,Loyalty Target Achievement,Feb'26,0,0,0,0,0,0,0,0,0,0,0
+,ead84fcf-42e6-416d-a7b5-d5bc6b4678c2,Loyalty Target Achievement,Mar'26,0,0,0,0,0,0,0,0,0,0,0
+,16132521-80b5-4d99-b4ef-06e50b6606f8,Loyalty Target Achievement,Apr'26,0,0,0,0,0,0,0,0,0,0,0
+,a6d8e496-1b30-419d-9ff7-0c7857036b06,Loyalty Target Achievement,May'26,0,0,0,0,0,0,0,0,0,0,0
+,86b99a09-d3f3-451e-9901-f6f76e850cf9,Loyalty Target Achievement,Jun'26,0,0,0,0,0,0,0,0,0,0,0
+,6062bfe2-7c17-47e5-9bb7-5b63fffa1ae4,Loyalty Target Achievement,Jul'26,0,0,0,0,0,0,0,0,0,0,0
+,84f5cb6d-9257-4644-b97c-06ca6fecb8e2,Loyalty Target Achievement,Aug'26,0,0,0,0,0,0,0,0,0,0,0
+,c85a1965-77c3-4363-a0d2-6edbf848e5c8,Loyalty Target Achievement,Sept'26,0,0,0,0,0,0,0,0,0,0,0
+,59f3632e-1280-4f5b-9eb3-1219b647aab0,Loyalty Target Achievement,Oct'26,0,0,0,0,0,0,0,0,0,0,0
+,0276052f-254a-4f6a-9a19-4bf7c0fe9e32,Loyalty Target Achievement,Nov'26,0,0,0,0,0,0,0,0,0,0,0
+,4413933c-4be5-4746-969a-0625a55db74c,Loyalty Target Achievement,Dec'26,0,0,0,0,0,0,0,0,0,0,0
+,db275225-aa79-4fc5-ba65-8794aacdff6e,Net Promoter Score – MINI Sales,Jan'26,10,0,100,100,0,0,0,0,0,0,0
+,cecce237-baa0-425c-8f01-00fc04b93b69,Net Promoter Score – MINI Sales,Feb'26,12,2,85.7142857142857,100,0.142857142857143,1.71428571428571,0,0,1,0,1
+,a246f1de-837c-41da-a0be-600e5bf097cd,Net Promoter Score – MINI Sales,Mar'26,14,4,77.7777777777778,100,0.222222222222222,3.11111111111111,0,0,1,0,1
+,9c20ad24-52cb-4b76-9b7f-d28c41d058ec,Net Promoter Score – MINI Sales,Apr'26,16,6,72.7272727272727,100,0.272727272727273,4.36363636363636,0,0,1,0,1
+,e75e397c-7138-434a-81b4-eca6729355fa,Net Promoter Score – MINI Sales,May'26,18,8,69.2307692307692,100,0.307692307692308,5.53846153846154,0,0,1,0,1
+,7b8f6061-1b71-491f-b948-ee9920089e87,Net Promoter Score – MINI Sales,Jun'26,20,10,66.6666666666667,100,0.333333333333333,6.66666666666667,0,0,1,0,1
+,32a1f5b6-9d63-4ed1-a41e-51de750c209b,Net Promoter Score – MINI Sales,Jul'26,22,12,64.7058823529412,100,0.352941176470588,7.76470588235294,0,0,1,0,1
+,a98dbc94-50ba-45ae-8e9c-72f5d8e4d451,Net Promoter Score – MINI Sales,Aug'26,0,0,0,0,0,0,0,0,0,0,0
+,38d1fd3e-b0ab-44e6-a8fe-3fc62860fc89,Net Promoter Score – MINI Sales,Sept'26,0,0,0,0,0,0,0,0,0,0,0
+,2cdd520b-3816-4d1e-83b5-1c2b91c0d18c,Net Promoter Score – MINI Sales,Oct'26,0,0,0,0,0,0,0,0,0,0,0
+,5656ce04-6884-4586-aa6a-09f0a91f0658,Net Promoter Score – MINI Sales,Nov'26,0,0,0,0,0,0,0,0,0,0,0
+,9923fe0b-179f-4176-99d7-b32098aea1e1,Net Promoter Score – MINI Sales,Dec'26,0,0,0,0,0,0,0,0,0,0,0
+,fc269f00-f7b3-4c4e-b9ca-9460cad672a0,Net Promoter Score – MINI Service,Jan'26,0,0,0,0,0,0,0,0,0,0,0
+,23017cc7-64ee-46e2-a77c-e1c640fa6b43,Net Promoter Score – MINI Service,Feb'26,0,0,0,0,0,0,0,0,0,0,0
+,0fd22b75-3776-44dc-8203-4e6a40804918,Net Promoter Score – MINI Service,Mar'26,0,0,0,0,0,0,0,0,0,0,0
+,549b6156-4c44-47a1-8245-b04d3863a1f0,Net Promoter Score – MINI Service,Apr'26,0,0,0,0,0,0,0,0,0,0,0
+,a3990112-7bbf-4edd-b30b-5623769db0a3,Net Promoter Score – MINI Service,May'26,0,0,0,0,0,0,0,0,0,0,0
+,ace21bf4-31ab-4472-8824-6e5915b41ada,Net Promoter Score – MINI Service,Jun'26,0,0,0,0,0,0,0,0,0,0,0
+,370d549a-8fdd-4c18-b38f-b433f2c017b2,Net Promoter Score – MINI Service,Jul'26,0,0,0,0,0,0,0,0,0,0,0
+,6ede7e1e-c14c-40d6-8b7e-f1956788461d,Net Promoter Score – MINI Service,Aug'26,0,0,0,0,0,0,0,0,0,0,0
+,d567c245-3568-4e22-83bc-ad8ee16c9efe,Net Promoter Score – MINI Service,Sept'26,0,0,0,0,0,0,0,0,0,0,0
+,a3597e7b-a0b3-40ff-b7b7-18cb5f60e1be,Net Promoter Score – MINI Service,Oct'26,0,0,0,0,0,0,0,0,0,0,0
+,b9df9404-e43f-4ccc-8ca2-6a9d9534846a,Net Promoter Score – MINI Service,Nov'26,0,0,0,0,0,0,0,0,0,0,0
+,566e74c6-a4a5-4a73-962b-7d3bcd002199,Net Promoter Score – MINI Service,Dec'26,0,0,0,0,0,0,0,0,0,0,0
+,711cdc0b-9c16-4daa-99c1-3ac09a8d63a2,Retail Target Achievement – MINI,Jan'26,36,35,102.857142857143,103,0.00142857142857153,0.0514285714285751,0,0,1,0,1
+,e4dd0c98-4930-4bf7-b5d2-ba7d9d0152aa,Retail Target Achievement – MINI,Feb'26,34,35,97.1428571428571,105,0.0785714285714286,2.67142857142857,1,0,1,0.0833333333333333,1.08333333333333
+,5373afb7-cfd4-4776-a420-0e0ac2c3ba8a,Retail Target Achievement – MINI,Mar'26,20,35,57.1428571428571,101,0.438571428571429,8.77142857142857,15,0,1,1.25,2.25
+,c6fe4056-bf3a-4116-8d6c-d34ad2de0dfb,Retail Target Achievement – MINI,Apr'26,30,35,85.7142857142857,45,0,0,5,-5,0,0.416666666666667,0.416666666666667
+,811551cf-7c45-4747-a881-1792d09d52ed,Retail Target Achievement – MINI,May'26,38,35,108.571428571429,112,0.0342857142857143,1.30285714285714,0,0,1,0,1
+,6b086ec8-450a-480b-9e27-128260b3eda9,Retail Target Achievement – MINI,Jun'26,0,0,0,0,0,0,0,0,0,0,0
+,711756d2-1c93-47eb-9aac-1e88c84f94f5,Retail Target Achievement – MINI,Jul'26,0,0,0,0,0,0,0,0,0,0,0
+,afe10872-cbd2-4c4e-94d0-a7019b5a0ac2,Retail Target Achievement – MINI,Aug'26,0,0,0,0,0,0,0,0,0,0,0
+,ee12c07d-66f4-46fe-ada8-a8ce7fe1e862,Retail Target Achievement – MINI,Sept'26,0,0,0,0,0,0,0,0,0,0,0
+,df4ceca9-f49d-4990-934f-234c13605ef1,Retail Target Achievement – MINI,Oct'26,0,0,0,0,0,0,0,0,0,0,0
+,6ab3957a-db99-4107-a7b3-6d84dd9ff503,Retail Target Achievement – MINI,Nov'26,0,0,0,0,0,0,0,0,0,0,0
+,7b9b4e39-8bef-4fc4-92ce-51ab74d92d0c,Retail Target Achievement – MINI,Dec'26,0,0,0,0,0,0,0,0,0,0,0
+,76453007-e73b-48dd-b792-c2910239f31c,Retail Growth YoY – MINI,Jan'26,0,0,0,0,0,0,0,0,0,0,0
+,0e07acee-1237-44bd-a64f-48f419793d0f,Retail Growth YoY – MINI,Feb'26,0,0,0,0,0,0,0,0,0,0,0
+,bedcdd5b-a38a-45e4-8677-f2a29bd36837,Retail Growth YoY – MINI,Mar'26,0,0,0,0,0,0,0,0,0,0,0
+,18e53237-3a2e-4fe4-bfd8-f729af4cde3e,Retail Growth YoY – MINI,Apr'26,0,0,0,0,0,0,0,0,0,0,0
+,61783949-a821-4bc8-a377-cb7ab65dd836,Retail Growth YoY – MINI,May'26,0,0,0,0,0,0,0,0,0,0,0
+,3e86bcb5-a4ac-4763-9343-31ccfd5ff1cc,Retail Growth YoY – MINI,Jun'26,0,0,0,0,0,0,0,0,0,0,0
+,40eccf45-f372-43b0-a75f-eedf6b1604af,Retail Growth YoY – MINI,Jul'26,0,0,0,0,0,0,0,0,0,0,0
+,74d81f01-484d-4407-9b05-a3c3335bc173,Retail Growth YoY – MINI,Aug'26,0,0,0,0,0,0,0,0,0,0,0
+,0bc56442-53d2-4e6d-aadc-954f9f6ced7c,Retail Growth YoY – MINI,Sept'26,0,0,0,0,0,0,0,0,0,0,0
+,487b6e3c-711a-4e40-bf47-26b047f360e1,Retail Growth YoY – MINI,Oct'26,0,0,0,0,0,0,0,0,0,0,0
+,98933a13-67af-4e8e-ac29-b993e4868fc3,Retail Growth YoY – MINI,Nov'26,0,0,0,0,0,0,0,0,0,0,0
+,e8ce4de5-2ffa-468d-ad45-ad7b684b98f7,Retail Growth YoY – MINI,Dec'26,0,0,0,0,0,0,0,0,0,0,0
+,37328c38-4a43-4160-b37f-ac172a1f5a8f,Enquiry Target Achievement,Jan'26,0,0,0,0,0,0,0,0,0,0,0
+,6d199ae0-68d9-42dd-ba73-2731172e938d,Enquiry Target Achievement,Feb'26,0,0,0,0,0,0,0,0,0,0,0
+,7c330d75-2769-4379-bfc2-328cf589e0bd,Enquiry Target Achievement,Mar'26,0,0,0,0,0,0,0,0,0,0,0
+,132e1d22-e125-4d19-83a0-cdbc497a7539,Enquiry Target Achievement,Apr'26,0,0,0,0,0,0,0,0,0,0,0
+,dd3b692b-8913-447d-8e78-796ea8c584c0,Enquiry Target Achievement,May'26,0,0,0,0,0,0,0,0,0,0,0
+,b4f61a23-1c2e-4d1d-9549-843880f1ad29,Enquiry Target Achievement,Jun'26,0,0,0,0,0,0,0,0,0,0,0
+,c3426f81-f070-4dd7-9d94-7eac05be7581,Enquiry Target Achievement,Jul'26,0,0,0,0,0,0,0,0,0,0,0
+,560c7f1d-1add-4a93-80ea-e17da71a2b94,Enquiry Target Achievement,Aug'26,0,0,0,0,0,0,0,0,0,0,0
+,fa9f2d0d-e7a8-47da-8ec9-a3f5c285553e,Enquiry Target Achievement,Sept'26,0,0,0,0,0,0,0,0,0,0,0
+,0f2d2778-da30-4e18-bbbb-ed9f40dc14ee,Enquiry Target Achievement,Oct'26,0,0,0,0,0,0,0,0,0,0,0
+,10aa62ae-fbae-49d6-8a53-8a3f656abf97,Enquiry Target Achievement,Nov'26,0,0,0,0,0,0,0,0,0,0,0
+,530c797e-af13-4e9e-bc22-2305931af8ec,Enquiry Target Achievement,Dec'26,0,0,0,0,0,0,0,0,0,0,0
+,e8ce9c77-d107-455c-ae79-401f2d4af16b,YoY Enquiry Growth,Jan'26,0,0,0,0,0,0,0,0,0,0,0
+,b9ef376a-bb26-4999-a5d6-5331114b18e6,YoY Enquiry Growth,Feb'26,0,0,0,0,0,0,0,0,0,0,0
+,9ae2049f-f28d-4058-9cf2-bb903f3316e0,YoY Enquiry Growth,Mar'26,0,0,0,0,0,0,0,0,0,0,0
+,a0c7c952-11de-4132-9a71-6409336e9a06,YoY Enquiry Growth,Apr'26,0,0,0,0,0,0,0,0,0,0,0
+,b7b847b2-ed7b-4ea9-857f-a3e0ea77443b,YoY Enquiry Growth,May'26,0,0,0,0,0,0,0,0,0,0,0
+,57a5f647-5016-441d-86ee-d313845257cc,YoY Enquiry Growth,Jun'26,0,0,0,0,0,0,0,0,0,0,0
+,76c28b87-93d0-42d1-a23e-3ddf9ef49116,YoY Enquiry Growth,Jul'26,0,0,0,0,0,0,0,0,0,0,0
+,e734d8a7-3e9d-40a9-88d1-ea6850dd9357,YoY Enquiry Growth,Aug'26,0,0,0,0,0,0,0,0,0,0,0
+,fb6bddf8-f8fa-4c36-9305-9bd84a642153,YoY Enquiry Growth,Sept'26,0,0,0,0,0,0,0,0,0,0,0
+,51290ecf-bf6a-44ab-806b-f5385152bb42,YoY Enquiry Growth,Oct'26,0,0,0,0,0,0,0,0,0,0,0
+,c4feb3e2-1a67-4740-83cf-171cc1611288,YoY Enquiry Growth,Nov'26,0,0,0,0,0,0,0,0,0,0,0
+,9784d4f0-51fb-4e20-9d3b-837b0d5d5168,YoY Enquiry Growth,Dec'26,0,0,0,0,0,0,0,0,0,0,0
+,7718bdeb-b244-4530-a488-7dea2f1b65c1,Test Drive Rate,Jan'26,0,0,0,0,0,0,0,0,0,0,0
+,028967e9-d850-4eb2-a6b6-d000e08473eb,Test Drive Rate,Feb'26,0,0,0,0,0,0,0,0,0,0,0
+,af72e3ce-7c6a-4d0f-a609-6c128265421e,Test Drive Rate,Mar'26,0,0,0,0,0,0,0,0,0,0,0
+,e4b3a038-f05a-4e78-af3d-916e17bb177c,Test Drive Rate,Apr'26,0,0,0,0,0,0,0,0,0,0,0
+,3c8c93e7-3307-495f-92f4-b1155a225a71,Test Drive Rate,May'26,0,0,0,0,0,0,0,0,0,0,0
+,d872c514-4130-4079-92d4-52c076bf7fb7,Test Drive Rate,Jun'26,0,0,0,0,0,0,0,0,0,0,0
+,dde642ad-4876-4d3c-9bea-9d6a5b3eca79,Test Drive Rate,Jul'26,0,0,0,0,0,0,0,0,0,0,0
+,5492d94d-7662-45dd-bc94-906f8d22d168,Test Drive Rate,Aug'26,0,0,0,0,0,0,0,0,0,0,0
+,6dfc3e0e-02e9-4c05-bbb3-93aafffa2a09,Test Drive Rate,Sept'26,0,0,0,0,0,0,0,0,0,0,0
+,f0f0ecf9-7598-4264-a968-07873e849265,Test Drive Rate,Oct'26,0,0,0,0,0,0,0,0,0,0,0
+,467c0e22-1cbe-4895-88af-f686d4c818cd,Test Drive Rate,Nov'26,0,0,0,0,0,0,0,0,0,0,0
+,dd30e321-f3f1-4f1e-b029-2d88cbeb6ea8,Test Drive Rate,Dec'26,0,0,0,0,0,0,0,0,0,0,0
+,8fef4ed1-26e2-4a2b-b7a3-fb81c227ef6e,Booking Rate,Jan'26,0,0,0,0,0,0,0,0,0,0,0
+,1ec1efaf-4330-46b7-a4ea-77f9dc3a28cf,Booking Rate,Feb'26,0,0,0,0,0,0,0,0,0,0,0
+,ebbfb997-9e89-4ebd-b0ca-94582b244c07,Booking Rate,Mar'26,0,0,0,0,0,0,0,0,0,0,0
+,5adcc2ce-f37a-4c06-b9b2-3e7fb2fba049,Booking Rate,Apr'26,0,0,0,0,0,0,0,0,0,0,0
+,ef59c1b9-fd07-4660-bf01-e4aefdf1c111,Booking Rate,May'26,0,0,0,0,0,0,0,0,0,0,0
+,aad1eeb2-0b8e-4b65-8dd2-31a4cafafee6,Booking Rate,Jun'26,0,0,0,0,0,0,0,0,0,0,0
+,1d0621d0-53c7-4bfa-a6ef-2a28c3dfe532,Booking Rate,Jul'26,0,0,0,0,0,0,0,0,0,0,0
+,994e6131-e307-4f31-95e8-bfd6c964b579,Booking Rate,Aug'26,0,0,0,0,0,0,0,0,0,0,0
+,8b03d256-d402-4b47-82da-d2be602564ca,Booking Rate,Sept'26,0,0,0,0,0,0,0,0,0,0,0
+,89127bbf-570c-46dc-aff5-c06d5e304081,Booking Rate,Oct'26,0,0,0,0,0,0,0,0,0,0,0
+,66990134-a292-421c-ae4f-8ad4dbd46358,Booking Rate,Nov'26,0,0,0,0,0,0,0,0,0,0,0
+,8d22a27f-b48c-46bb-b812-2e73e1b43ac2,Booking Rate,Dec'26,0,0,0,0,0,0,0,0,0,0,0
+,6db3a220-6e7f-4c09-b517-95683c7f9f06,Walk-In Conversion,Jan'26,0,0,0,0,0,0,0,0,0,0,0
+,b8bac5cf-801b-490c-9b48-bdc0bdc9b550,Walk-In Conversion,Feb'26,0,0,0,0,0,0,0,0,0,0,0
+,f5013d52-bc11-40cc-85fa-5a1b65c98537,Walk-In Conversion,Mar'26,0,0,0,0,0,0,0,0,0,0,0
+,de9cfc83-03bf-4960-9e8a-fa56934dc4d5,Walk-In Conversion,Apr'26,0,0,0,0,0,0,0,0,0,0,0
+,3f14d8ae-7242-4b42-b3fa-1dc08ab9d3fd,Walk-In Conversion,May'26,0,0,0,0,0,0,0,0,0,0,0
+,e00de127-e84f-4018-a702-fadbd3b6ef37,Walk-In Conversion,Jun'26,0,0,0,0,0,0,0,0,0,0,0
+,70338764-1681-4c42-83eb-e4be589966b9,Walk-In Conversion,Jul'26,0,0,0,0,0,0,0,0,0,0,0
+,23235222-fddd-4677-a274-bb3529aee08e,Walk-In Conversion,Aug'26,0,0,0,0,0,0,0,0,0,0,0
+,a6d3483a-5f78-4c95-b1fb-1403a37d1134,Walk-In Conversion,Sept'26,0,0,0,0,0,0,0,0,0,0,0
+,c2b14330-5078-4772-bc3f-cdd6840cf13d,Walk-In Conversion,Oct'26,0,0,0,0,0,0,0,0,0,0,0
+,f0868fa4-a0f5-473a-930f-82a149b3617c,Walk-In Conversion,Nov'26,0,0,0,0,0,0,0,0,0,0,0
+,1bc30e68-5a78-4154-bf0d-6ca40a73b9c0,Walk-In Conversion,Dec'26,0,0,0,0,0,0,0,0,0,0,0
+,80e73ef2-137e-44ad-bdbd-42c565e9fa4c,BEC Adoption Rate,Jan'26,0,0,0,0,0,0,0,0,0,0,0
+,21fbe311-fc94-41de-ad30-2e8cc41f6485,BEC Adoption Rate,Feb'26,0,0,0,0,0,0,0,0,0,0,0
+,5bea108f-fdf3-4b92-bac9-201e063ab075,BEC Adoption Rate,Mar'26,0,0,0,0,0,0,0,0,0,0,0
+,64ec07db-a962-42e0-bec0-400139c75548,BEC Adoption Rate,Apr'26,0,0,0,0,0,0,0,0,0,0,0
+,d7f6d125-2874-450d-8002-0a9390ee74b5,BEC Adoption Rate,May'26,0,0,0,0,0,0,0,0,0,0,0
+,db78be0b-c698-4be2-9882-a9394a589b68,BEC Adoption Rate,Jun'26,0,0,0,0,0,0,0,0,0,0,0
+,c1b58675-d1b5-4c1f-87f0-1348f11edf57,BEC Adoption Rate,Jul'26,0,0,0,0,0,0,0,0,0,0,0
+,a262da11-e6d3-42d4-b4f6-923be526e71b,BEC Adoption Rate,Aug'26,0,0,0,0,0,0,0,0,0,0,0
+,db39ef7f-814a-40d3-8ddd-9bc63ed3f1a0,BEC Adoption Rate,Sept'26,0,0,0,0,0,0,0,0,0,0,0
+,39d1e724-2a28-4528-8d07-7d55c392a53c,BEC Adoption Rate,Oct'26,0,0,0,0,0,0,0,0,0,0,0
+,6ff2ffa9-73f7-4d59-b52e-6cb7da430570,BEC Adoption Rate,Nov'26,0,0,0,0,0,0,0,0,0,0,0
+,39a652db-dc6e-4e2b-a4f3-dcef85ef59ac,BEC Adoption Rate,Dec'26,0,0,0,0,0,0,0,0,0,0,0
